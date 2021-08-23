@@ -1,21 +1,48 @@
-.mainheader{
-    background-color: #85d7f2;
-    display: grid;
-    grid-template-columns: 50% 50%;
+
+@media only screen and (max-width: 768px) 
+{
+    .mainheader{
+        background-color: #85d7f2;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+    .header-info{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: auto;
+        width: 80%;
+        padding: 0.5rem;
+    }
+    .registration-form{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 0.5rem;
+        margin: auto;
+        background-color: white;
+    }
 }
-.header-info{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-left: 25px;
-    padding: 0.5rem;
+@media only screen and (min-width: 768px) 
+{
+    .mainheader{
+        background-color: #85d7f2;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .header-info{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-left: 25px;
+        padding: 0.5rem;
+    }
+    .registration-form{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 0.5rem;
+        margin: 12px;
+        background-color: white;
+    }
 }
-.registration-form{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 0.5rem;
-    margin: 12px;
-    background-color: white;
-}
+
 .header-info-1{
     font-size: 1.3rem;
     color: var(--indigo);
