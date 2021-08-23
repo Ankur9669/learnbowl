@@ -1,0 +1,41 @@
+.mainheader{
+    background-color: #85d7f2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.header-info{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 25px;
+    padding: 0.5rem;
+}
+.registration-form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 0.5rem;
+    margin: 12px;
+    background-color: white;
+}
+.header-info-1{
+    font-size: 1.3rem;
+    color: var(--indigo);
+    font-weight: 700;
+}
+.header-info-2{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+.header-info-3{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.header-img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-height: 70%;
+}
+.margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
