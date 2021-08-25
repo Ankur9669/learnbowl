@@ -1,5 +1,8 @@
 *{
   margin: 0px;
-
+}
+.App{
+  max-width: 1600px;
+  margin: auto;
 }
 
