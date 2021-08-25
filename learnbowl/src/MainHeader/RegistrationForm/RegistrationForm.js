@@ -1,8 +1,13 @@
 import React from 'react'
 import "./registrationform.css";
-function RegistrationForm() {
+function RegistrationForm()
+{
+    function onSubmit(e)
+    {
+        e.preventDefault();
+    }
     return (
-        <form className = "registration-form">
+        <form className = "registration-form" onSubmit = {(e) => onSubmit(e)}>
             <label for = "form-heading" className = "display-block form-heading margin-top-bottom">
                 Register Here
             </label>
