@@ -1,0 +1,164 @@
+.navbar{
+    display: flex;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    position: sticky;
+    align-items: center;
+    background-color: #F7F7FB;
+    z-index: 10000;
+}
+.learnbowl-icon{
+    width: 225px;
+}
+.navbar-icon{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.menu-items{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+}
+.navbar-text{
+    margin-left: 5px;
+    font-size: 2rem;
+}
+.items{
+    color: black;
+    padding: 10px 15px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    /* transition: 0.3s; */
+}
+.items-active{
+    position: relative;
+    color:  #00318F;
+    /* border-bottom: 3px solid #00318F; */
+    padding: 10px 15px;
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.items-active::after{
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    content: "";
+    width: 45%;
+    height: 3px;
+    background-color: #00318E;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+.items:hover{
+    color:  #00318F;
+    font-weight: 550;
+}
+@media only screen and (max-width: 1230px)
+{
+    .menu-items{
+        flex: 2;
+    }
+}
+@media only screen and (max-width: 940px) 
+{
+    .menu-icon{
+        width: 30px;
+        height: 90px;
+        margin-right: 20px;
+        cursor: pointer; 
+    }
+    .menu-items-mobiles{
+        position: absolute;
+        background-color: white;
+        height: 100vh;
+        width: 90%;
+        top: 0px;
+        right: 0px; 
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; 
+        transition: 0.3s; 
+    }
+    .menu-items{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-weight: 500;
+        margin:0px;
+        padding: 0px;
+        margin-top: 30px;
+    }
+    .items{
+        color: #2D3092;
+        font-weight: 500;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 30px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .items-active-mob{
+        color: #2D3092;
+        background-color: #E5F3FF;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        font-weight: 500;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 30px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .mobile-nav-item{
+        display: flex;
+    }
+    .mobile-nav-item img{
+        margin-right: 20px;
+        /* margin-left: 20px; */
+        width: 25px;
+    }
+    .nav-close-icon{
+        margin-left: auto;
+        margin-right: 30px;
+        width: 50px;
+        cursor: pointer;
+    }
+    .nav-mob-orange-ellipse{
+        width: 140px;
+        position: absolute;
+        bottom: 0px;
+        right: -30px;
+    }
+    .nav-mob-blue-ellipse{
+        width: 80px;
+        position: absolute;
+        bottom: 90px;
+        right: 40px;
+    }
+}
+@media only screen and (max-width: 770px) 
+{
+    .navbar-icon{
+        margin-left: 30px;
+    }
+    .learnbowl-icon{
+        width: 150px;
+    }
+}

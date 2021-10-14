@@ -1,0 +1,67 @@
+.frenchschool-section-1{
+    background-color: #F2FBFF;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.frenchschool-section-1-heading{
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+}
+.frenchschool-section-1-cards{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.frenchschool-section-1-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 302px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 10px rgba(24, 130, 255, 0.1);
+}
+.frenchschool-section-1-card-text{
+    font-size: 22px;
+    text-align: center;
+}
+@media only screen and (max-width: 768px)
+{
+    .frenchschool-section-1-heading{
+        font-size: 26px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .frenchschool-section-1-cards-mobile{
+        display: flex;
+        flex-direction: row;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .frenchschool-section-1-card-mobile{
+        display: flex;
+        max-width: 200px;
+        height: 85px;
+        margin:auto;
+    }
+    .frenchschool-section-1-card-img-mobile{
+        width: 30px;
+        margin-right: 10px;
+    }
+    /* .frenchschool-section-1-card-text-mobile{
+
+    } */
+}

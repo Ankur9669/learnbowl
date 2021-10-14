@@ -1,0 +1,66 @@
+.vedic-section-2{
+    background: linear-gradient(180deg, rgba(203, 255, 151, 0.35) -18.95%, rgba(42, 166, 255, 0.35) 118.95%);
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 1350px;
+    margin: auto;
+}
+.vedic-section-2-points-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.vedic-section-2-points-mobile-section{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.vedic-section-2-point-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vedic-section-2-point-heading{
+    font-size: 35px;
+    font-weight: 500;
+    color: #1E2063;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.vedic-section-2-point-sub-heading{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 1, 48, 0.6);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+@media only screen and (max-width: 1180px)
+{
+    .vedic-section-2-points-container{
+        flex-direction: column;
+    }
+    .vedic-section-2-points-mobile-section{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 732px)
+{
+    
+    .vedic-section-2-point-heading{
+        font-size: 20px;
+    }
+    .vedic-section-2-point-sub-heading{
+        font-size: 14px;
+    }
+    .vedic-section-2-point-img{
+        width: 90px;
+    }
+}

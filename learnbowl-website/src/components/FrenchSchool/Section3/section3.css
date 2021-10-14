@@ -1,0 +1,207 @@
+.frenchschool-section-3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    background-color: #F2FBFF;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.frenchschool-section-3-section-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.frenchschool-section-3-section-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.frenchschool-section-3-section-1-heading{
+    font-size: 44px;
+    font-weight: 600;
+    color: #323232;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    max-width: 560px;
+}
+.frenchschool-section-3-section-1-mobile-heading{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 30px;
+    font-weight: 600;
+    color: #323232;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    max-width: 560px;
+    background-color: #F2FBFF;
+}
+.frenchschool-section-3-section-1-info-1{
+    font-size: 18px;
+    font-weight: 400;
+    color: #6D7679;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    max-width: 560px;
+}
+.frenchschool-section-3-section-1-info-2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #FBA229;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    max-width: 560px;
+}
+.frenchschool-section-3-section-1 .register-btn{
+    display: block;
+    width: 225px;
+    height: 50px;
+    background-color: #2D3092;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.frenchschool-section-3-section-2 .point{
+    flex: 1;
+    max-width: 300px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.frenchschool-section-3-section-2 .points-container{
+    margin-top: 50px;
+}
+.frenchschool-section-3-section-2 .point-image{
+    width: 50px;
+}
+.frenchschool-section-3-section-2 .point-info{
+    font-size: 22px;
+    color: #323232;
+    font-weight: 500;
+}
+.frenchschool-section-3-section-2 .point:hover{
+    background-color: white;
+    border-radius: 100px;
+}
+@media only screen and (max-width: 1080px)
+{
+    .frenchschool-section-3{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;  
+    }
+    .frenchschool-section-3-section-1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .frenchschool-section-3-section-2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .frenchschool-section-3-section-1-heading{
+        display: none;
+    }
+    .frenchschool-section-3-section-1-mobile-heading{
+        text-align: center;
+        font-size: 44px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 1560px;
+    }
+    .frenchschool-section-3-section-1-info-1{
+        /* font-size: 14px; */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 1560px;
+    }
+    .frenchschool-section-3-section-1-info-2{
+        /* font-size: 14px; */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 1560px;
+    }
+    .frenchschool-section-3-section-1 .register-btn{
+        /* width: 150px;
+        height: 40px;
+        font-size: 14px;*/
+        margin-left: 20px; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .frenchschool-section-3-section-2 .points-container{
+        margin-top: 20px;
+    }
+    .frenchschool-section-3-section-2 .point{
+        padding-left: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .frenchschool-section-3-section-1-mobile-heading{
+        font-size: 26px;
+    }
+    .frenchschool-section-3-section-2 .point{
+        max-width: 200px;
+        background-color: white;
+        border-radius: 100px;
+    }
+    .frenchschool-section-3-section-2 .point-image{
+        width: 45px;
+    }
+    .frenchschool-section-3-section-2 .point-info{
+        font-size: 18px;
+        color: #323232;
+        font-weight: 500;
+    }
+    .frenchschool-section-3-section-1-info-1{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 1560px;
+    }
+    .frenchschool-section-3-section-1-info-2{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 1560px;
+    }
+    .frenchschool-section-3-section-1 .register-btn{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

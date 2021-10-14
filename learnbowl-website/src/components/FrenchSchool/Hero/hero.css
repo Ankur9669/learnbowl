@@ -1,0 +1,267 @@
+.hero-frenchschool{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.hero-frenchschool-section-1{
+    /* flex: 1; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* grid-row-start: 1;
+    grid-row-end: 2; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.hero-frenchschool-section-1-heading img{
+    vertical-align: middle;
+    padding-bottom: 5px;
+    margin-left: 3px;
+    /* height: 69px; */
+}
+/* Hero Section-1 Css Start*/
+.hero-frenchschool-section-1-heading{
+    font-weight: 700;
+    font-size: 49px;
+    margin-bottom: 20px;
+    color: #323232;
+    max-width: 700px;
+    margin-left: auto;
+    word-spacing: 0.5px;
+}
+.hero-frenchschool-section-1-img-container{
+    display: flex;
+    justify-content: center;
+}
+.hero-frenchschool-section-1-img{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10px;
+}
+/* Hero Section-1 Css End*/
+
+/* Hero Section-2 Css Start */
+.input-box-frenchschool{
+    position: relative;
+    /* margin-top: 35px; */
+    margin-bottom: 35px;
+  }
+  .input-frenchschool{
+    box-sizing: border-box;
+    height: 45px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    transition: 0.25s;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .input-frenchschool:focus{
+    outline: none;
+    border: 1px solid #000F61;
+  }
+  .input-label-frenchschool{
+    position: absolute;
+    color: #282828;
+    font-size: 14px;
+    font-weight: 500;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left: 32px;
+    top: 15px;
+    transition: 0.25s;
+  }
+  .input-box.active .input-label-frenchschool,
+  .input-frenchschool:focus + .input-label-frenchschool,
+  .input-frenchschool:active + .input-label-frenchschool{
+    top: -6px;
+    left: 28px;
+    background-color: white;
+    font-size: 12px;
+  }
+  
+.input-frenchschool:not([value=""]) + .input-label-frenchschool{
+    top: -6px;
+    left: 28px;
+    background-color: white;
+    font-size: 12px;
+  }
+.hero-frenchschool-section-2{
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    border-radius: 20px;
+    max-width: 498px;
+    max-height: 500px;
+    margin-top: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 4px 40px 15px rgba(227, 241, 251, 0.5);
+}
+.hero-frenchschool-section-2-heading{
+    margin-left: 28px;
+    font-size: 26px;
+    color: #1E2063;
+}
+/* .hero-french-section-2 form .input{
+    position: relative;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #D7D7D7;
+    width: 80%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-left: 3px;
+    font-size: 15px;
+    height: 30px;
+} */
+/* .hero-french-section-2 form .select{
+    position: relative;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #D7D7D7;
+    width: 80%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 15px;
+    height: 30px;
+    color: #828282;
+} */
+/* .select:focus-visible{
+    outline: none;
+} */
+.checkbox{
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: green;
+}
+.register-btn{
+    display: block;
+    width: 225px;
+    height: 50px;
+    background-color: #2D3092;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.frenchschool-hero-section-2-date-container{
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+.frenchschool-hero-section-2-date-btn{
+    width: 135px;
+    height: 40px;
+    background-color: #F1F1F1;
+    font-size: 13px;
+    color: #464646;
+    border-radius: 100px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.frenchschool-hero-section-2-date-btn-active{
+    width: 135px;
+    height: 40px;
+    background-color: #303030;
+    font-size: 13px;
+    color: white;
+    border-radius: 100px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.frenchschool-hero-section-2-bastille{
+    position: absolute;
+    width: 140px;
+    bottom: 0px;
+    right: 0px;
+}
+/* Hero Section-2 Css End */
+
+@media only screen and (max-width: 800px)
+{
+    .hero-frenchschool{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        align-items: center;
+        justify-items: center;
+    }
+    .hero-frenchschool-section-1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: block;
+        text-align: start;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .hero-frenchschool-section-2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: 20px;
+        margin-right: 20px;
+        z-index: 100;
+        /* width: 100%; */
+    }
+    .hero-frenchschool-section-1-heading{
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        color: #323232;
+        max-width: 70vw;
+        /* text-align: start; */
+    }
+    .hero-frenchschool-section-1-heading img{
+        vertical-align: middle;
+        height: 46px;
+        padding-bottom: 0px;
+    }
+    .hero-frenchschool-section-1-img{
+        display: none
+    }
+    .frenchschool-hero-section-2-bastille{
+        position: absolute;
+        width: 130px;
+        top: -130px;
+        right: 0px;
+    }
+ 
+    @media only screen and (max-width: 380px){
+        .checkbox-label{
+            font-size: 14px;
+        }  
+        .checkbox{
+            margin-left: 10px;
+        }  
+    }
+    
+}

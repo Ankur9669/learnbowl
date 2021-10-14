@@ -1,0 +1,208 @@
+.card-section{
+    background-color:#F3FCFF;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.card-section-heading{
+    font-size: 45px;
+    font-weight: 600;
+    color: #323232;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 70px;
+    max-width: 1350px;
+}
+.card{
+    position: relative;
+    width: 490px;
+    height: 540px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: left;
+    box-shadow: 0px 2px 50px rgba(0, 77, 167, 0.2);
+}
+/* Card Image Start */
+.card-icon{
+    position:absolute;
+    bottom: 42px;
+    right: 0px;
+}
+.card-icon .french-img{
+    height: 392px;
+}
+.card-icon .vedic-img{
+    height: 362px;
+}
+/* Card Image End*/
+
+/* Card Text Section Start */
+.card-txt{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.card-heading{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.card-sub-heading{
+    color:#7B7B7B;
+    font-size: 17px;
+    font-weight: 500;
+}
+.card-info{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card .rightArrow{
+    width: 19px;
+}
+.point{
+    display: flex;
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-weight: 490;
+}
+.point img{
+    margin-right: 10px;
+    width: 15px;
+}
+.bullet{
+    margin-right: 10px !important;
+    width: 15px !important;
+}
+.points{
+    margin-top: 20px;
+    margin-left: 7px;
+}
+/* Card Text Section End */
+
+.card-btn{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #2D3092;
+    border-radius: 0px 0px 20px 20px;
+    color: #FFFFFF;
+    font-size: 23px;
+}
+.card-info-img{
+    width: 380px;  
+    margin-top: 20px; 
+}
+@media only screen and (max-width: 1032px)
+{
+    .cards{
+        flex-direction: column;
+        align-items:center;
+    }
+    .card{
+        margin:30px 20px;
+        position: relative;
+        width: 450px;
+        height: 500px;
+        background-color: white;
+        border-radius: 20px;
+        text-align: left;
+        box-shadow: 0px 2px 50px rgba(0, 77, 167, 0.2);
+    }
+    .card-icon .french-img{
+        height: 392px;
+    }
+    .card-icon .vedic-img{
+        height: 322px;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .card-section{
+        padding-bottom: 20px;
+    }
+    .card-section-heading{
+        font-size: 30px;
+        font-weight: 500;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .cards{
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 632px)
+{
+    .card-icon{
+        position:absolute;
+        bottom: 42px;
+        right: 0px;
+    }
+    .card{
+        width: 302px;
+        height: 370px;
+    }
+    .card-icon{
+        position:absolute;
+        bottom: 30px;
+        right: 0px;
+    }
+    .card-icon .french-img{
+        height: 252px;
+    }
+    .card-icon .vedic-img{
+        height: 222px;
+    }
+    .card-txt{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .card-heading{
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .card-sub-heading{
+        color:#7B7B7B;
+        font-size: 14px;
+    }
+    .card-info{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .point{
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        /* vertical-align: middle; */
+    }
+    .point img{
+        width: 10px;
+        margin-right: 5px;
+    }
+    .bullet{
+        margin-right: 5px !important;
+        width: 8px !important;
+    }
+    .card-btn{
+        height: 43px;
+        color: #FFFFFF;
+        font-size: 17px;
+    }
+    .card-info-img{
+        width: 290px;  
+        margin-top: 15px; 
+    }
+    .card .rightArrow{
+        width: 14px;
+    }
+}
+

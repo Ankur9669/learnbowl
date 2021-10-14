@@ -1,0 +1,173 @@
+.vedic-section-4{
+    position: relative;
+    display: grid;
+    background-color: #F2FBFF;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: center; 
+    z-index: 1000;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+/* French Wave Css Start */
+.vedic-section-4 .wave1{
+    position: absolute;
+    left: 2.3%;
+    right: 0%;
+    top: 0%;
+    bottom: 13.96%;
+}
+
+.vedic-section-4 .wave2{
+    position: absolute;
+    left: 1.67%;
+    right: 0.63%;
+    top: 4.58%;
+    bottom: 9.39%;
+}
+
+.vedic-section-4 .wave3{
+    position: absolute;
+    left: 0.92%;
+    right: 1.38%;
+    top: 9.11%;
+    bottom: 4.86%;
+}
+
+.vedic-section-4 .wave4{
+    position: absolute;
+    left: 0%;
+    right: 2.3%;
+    top: 13.96%;
+    bottom: 0%;
+    
+}
+/* French Wave Css End */
+
+/* French Page section 1 css Start */
+.vedic-section-4-heading{
+    font-size: 45px;
+    font-weight: 600;
+    color: #323232;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    z-index: 100;
+}
+.vedic-section-4-points{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+/* .vedic-section-4-points-row-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.vedic-section-4-points-row-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+} */
+.vedic-section-4-point{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    /* width: 200px; */
+}
+.vedic-section-4-point-info-1{
+    display: flex;
+    margin-left: 25px;
+    font-size: 40px;
+    font-weight: 550;
+    color: #1E2063;
+}
+.vedic-section-4-point-info-1 img{
+    margin-left: 5px;
+}
+.vedic-section-4-point-info-2{
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000130;
+    opacity: 60%;
+}
+.vedic-section-4-section-1{
+    grid-column-start: 1;
+    grid-column-end: 2;  
+}
+/* French Page section 1 css End */
+
+/* French Page section 2 css Start */
+.vedic-section-4-section-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.vedic-section-4-section-2-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.vedic-section-4-section-2{
+    display: flex;
+    justify-content: center;
+}
+
+/* French Page section 3 css End */
+@media only screen and (max-width: 768px)
+{
+    .vedic-section-4-heading{
+        font-size: 26px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width: 940px)
+{
+    .vedic-section-4{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .french-section-3-heading{
+        font-size: 26px;
+        margin-top: 10px;
+    } */
+    .vedic-section-4-section-1{
+        display: flex;
+        width: 100%;
+    }
+    .vedic-section-4-point-info-1{
+        margin-left: 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .vedic-section-4-point-info-1 img{
+        width: 18px;
+    }
+    .vedic-section-4-point-info-2{
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .vedic-section-4-points{
+        display: flex;
+        width: 100%;
+    }
+    .vedic-section-4-section-2-img{
+        width: 90%;
+    }
+    .vedic-section-4-section-2{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    .vedic-section-4-points{
+        margin-left: 0px;
+    }
+}

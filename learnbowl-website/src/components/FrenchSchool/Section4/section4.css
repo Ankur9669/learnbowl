@@ -1,0 +1,151 @@
+.frenchschool-section-4{
+    position: relative;
+    display: grid;
+    background-color: #F7FAFB;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    align-items: center; 
+    overflow-y: hidden;
+    z-index: 1000;
+}
+/* frenchschool Wave Css Start */
+.frenchschool-section-4 .wave1{
+    position: absolute;
+    left: 2.4%;
+    right: 0%;
+    top: 0%;
+    bottom: 14.96%;
+}
+
+.frenchschool-section-4 .wave2{
+    position: absolute;
+    left: 1.67%;
+    right: 0.64%;
+    top: 4.58%;
+    bottom: 9.49%;
+}
+
+.frenchschool-section-4 .wave3{
+    position: absolute;
+    left: 0.92%;
+    right: 1.48%;
+    top: 9.11%;
+    bottom: 4.86%;
+}
+
+.frenchschool-section-4 .wave4{
+    position: absolute;
+    left: 0%;
+    right: 2.4%;
+    top: 14.96%;
+    bottom: 0%;
+    
+}
+/* frenchschool Wave Css End */
+
+/* frenchschool Page section 1 css Start */
+.frenchschool-section-4-heading{
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    z-index: 100;
+}
+.frenchschool-section-4-points{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.frenchschool-section-4-point{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+.frenchschool-section-4-point-info-1{
+    margin-left: 25px;
+    font-size: 40px;
+    font-weight: 550;
+    color: #1E2064;
+}
+.frenchschool-section-4-point-info-2{
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000140;
+    opacity: 60%;
+}
+.frenchschool-section-4-section-1{
+    grid-column-start: 1;
+    grid-column-end: 2;  
+}
+/* frenchschool Page section 1 css End */
+
+/* frenchschool Page section 2 css Start */
+.frenchschool-section-4-section-2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.frenchschool-section-4-section-2-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.frenchschool-section-4-section-2{
+    display: flex;
+    justify-content: center;
+}
+
+/* frenchschool Page section 4 css End */
+@media only screen and (max-width: 768px)
+{
+    .frenchschool-section-4-heading{
+        font-size: 26px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width: 940px)
+{
+    .frenchschool-section-4{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .frenchschool-section-4-heading{
+        font-size: 26px;
+        margin-top: 10px;
+    } */
+    .frenchschool-section-4-section-1{
+        display: flex;
+        width: 100%;
+    }
+    .frenchschool-section-4-point-info-1{
+        margin-left: 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .frenchschool-section-4-point-info-2{
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .frenchschool-section-4-points{
+        display: flex;
+        width: 100%;
+    }
+    .frenchschool-section-4-section-2-img{
+        width: 90%;
+    }
+    .frenchschool-section-4-section-2{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+    .frenchschool-section-4-points{
+        margin-left: 0px;
+    }
+}

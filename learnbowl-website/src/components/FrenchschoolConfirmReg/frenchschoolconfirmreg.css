@@ -1,0 +1,211 @@
+.frenchschoolconfirmreg{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.frenchschoolconfirmreg-heading{
+    font-size: 45px;
+    color: #323232;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.frenchschoolconfirmreg-sub-heading{
+    font-size: 24px;
+    color: #2d3092;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.frenchschoolconfirmreg-txt{
+    font-size: 22px;
+    color: #323232;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 750px;
+}
+.frenchschoolconfirmreg-form{
+    max-width: 646px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 40px 15px rgba(227, 241, 251, 0.5);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.input-frenchschoolconfirm{
+    box-sizing: border-box;
+    height: 45px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 1px solid #BCBCBC;
+    border-radius: 10px;
+    transition: 0.25s;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+.input-label-frenchschoolconfirm{
+    position: absolute;
+    color: #282828;
+    font-size: 14px;
+    font-weight: 500;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    left: 112px;
+    top: 15px;
+    transition: 0.25s;
+}
+.input-box.active .input-label-frenchschoolconfirm,
+  .input-frenchschoolconfirm:focus + .input-label-frenchschoolconfirm,
+  .input-frenchschoolconfirm:active + .input-label-frenchschoolconfirm{
+    top: -6px;
+    left: 108px;
+    background-color: white;
+    font-size: 12px;
+  }
+  
+  .input-frenchschoolconfirm:not([value=""]) + .input-label-frenchschoolconfirm{
+    top: -6px;
+    left: 108px;
+    background-color: white;
+    font-size: 12px;
+  }
+.frenchschoolconfirmreg-register-btn{
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #2d3092;
+    color: white;
+}
+.frenchschoolconfirmreg-form-heading{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #1E2063;
+    font-size: 26px;
+    font-weight: 600;
+}
+.frenchschoolconfirmreg-frenchcountry-img{
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    width: 30%;
+}
+.frenchschoolconfirmreg-bastille-img{
+    position: absolute;
+    bottom: 0px;
+    right: -130px;
+    width: 30%;
+}
+@media only screen and (max-width: 720px)
+{
+    .frenchschoolconfirmreg-frenchcountry-img{
+        width: 270px;
+        left: 60%;
+        right: 0px;  
+    }
+    .frenchschoolconfirmreg-bastille-img{
+        display: none;
+    }
+    .frenchschoolconfirmreg{
+        align-items: flex-start;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .frenchschoolconfirmreg-heading{
+        font-size: 30px;
+        color: #323232;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .frenchschoolconfirmreg-sub-heading{
+        font-size: 16px;
+        color: #2d3092;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .frenchschoolconfirmreg-txt{
+        font-size: 14px;
+        color: #323232;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        max-width: 550px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .frenchschoolconfirmreg-form{
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 646px;
+        width: 90%;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 40px 15px rgba(227, 241, 251, 0.5);
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .frenchschoolconfirmreg-form-heading{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 18px;
+    }
+    .frenchschoolconfirmreg-register-btn{
+        width: 90%;
+        height: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 16px;
+    }
+    .input-frenchschoolconfirm{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .input-label-frenchschoolconfirm{
+        left: 36px;
+        top: 15px;
+    }
+    .input-box.active .input-label-frenchschoolconfirm,
+      .input-frenchschoolconfirm:focus + .input-label-frenchschoolconfirm,
+      .input-frenchschoolconfirm:active + .input-label-frenchschoolconfirm{
+        top: -6px;
+        left: 38px;
+        background-color: white;
+        font-size: 12px;
+      }
+      
+      .input-frenchschoolconfirm:not([value=""]) + .input-label-frenchschoolconfirm{
+        top: -6px;
+        left: 38px;
+        background-color: white;
+        font-size: 12px;
+      }
+      
+}
+@media only screen and (max-width: 480px)
+{
+    .frenchschoolconfirmreg-frenchcountry-img{
+        width: 170px;
+        left: 60%;
+        right: 0px;
+    }
+}

@@ -1,0 +1,241 @@
+.french-section-4{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.french-section-4 .french-country-img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    max-width: 350px;
+}
+.french-section-4-heading{
+    font-size: 45px;
+    font-weight: 600;
+    color: #323232;
+    text-align: center;
+    background-color: #F7F7FB;
+    z-index: 100;
+}
+.carausel-container{
+    max-width: 1300px;
+    margin:auto;
+}
+.french-section-4-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y:hidden;
+    justify-content: space-around;
+}
+.french-section-4-card{
+    position: relative;
+    max-width: 361px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 361px;
+    height: 690px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+/* card part-1 css start */
+.french-section-4-card-part-1
+{
+    margin-left: 35px;
+    padding-top: 20px;
+}
+.french-section-4-card-part-1 h3{
+    font-size: 33px;
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.french-section-4-card-part-1 h4{
+    font-size: 21px;
+    margin: 0px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.french-section-4-card-part-1 h5{
+    font-size: 16px;
+    margin: 0px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.french-section-4-card-part-1-point{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.french-section-4-card-part-1 p{
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-weight: 500;
+}
+/* card part-1 css end */
+
+/* card part-2 css start */
+.french-section-4-card-part-2{
+    position: absolute;
+    bottom: 120px;
+    left: 35px;
+}
+.french-section-4-card-part-2-price-container{
+    display: flex;
+}
+.french-section-4-card-part-2-price-container .discounted-price{
+    display: flex;
+    flex-direction: row;
+}
+.discounted-price p{
+    font-size: 28px;
+    color: #1E2063;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+.real-price p{
+    color: #5E95FF;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-left: 10px;
+    text-align: end;
+    text-decoration: line-through;
+}
+.french-section-4-card-part-2-price-container .discount-percent{
+    height: 28px;
+    width: 72px;
+    margin-top: 5px;
+    padding-left: 16px;
+    padding-top: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #ABE1FF;
+}
+.french-section-4-card-part-2-info-container{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.french-section-4-card-part-2-info-container .info{
+    color: #8E8E8E;
+    font-weight: 500;
+}
+.french-section-4-card-part-2-btn-container .btn{
+    position: absolute;
+    bottom: 30px;
+    left: 36px;
+    height: 70px;
+    width: 282px;
+    /* margin-left: 36px;
+    margin-top: 15px; */
+    font-size: 18px;
+    background-color: #2D3092;
+    border-radius: 15px;
+    color: white;
+}
+/* card part-2 css end */
+@media only screen and (max-width: 768px)
+{
+    .french-section-4-heading{
+        font-size: 26px;
+        font-weight: 500;
+        text-align: center;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .french-section-4 .french-country-img{
+        max-width: 100px;
+    }
+}
+@media only screen and (max-width: 900px)
+{
+    .french-section-4 .french-country-img{
+        max-width: 250px;
+    }
+    .french-section-4-card{
+        max-width: 280px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        min-width: 280px;
+        height: 580px;
+    }
+    .french-section-4-card-part-1
+    {
+        margin-left: 20px;
+        padding-top: 15px;
+    }
+    .french-section-4-card-part-1 h3{
+        font-size: 22px;
+        margin: 0px;
+        margin-top: 12px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .french-section-4-card-part-1 h4{
+        font-size: 16px;
+        margin: 0px;
+        font-weight: 500;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .french-section-4-card-part-1 h5{
+        font-size: 14px;
+        margin: 0px;
+        font-weight: 500;
+        margin-top: 9px;
+        margin-bottom: 30px;
+    }
+    .french-section-4-card-part-1-point{
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .french-section-4-card-part-1 p{
+        font-size: 18px;
+        vertical-align: middle;
+        margin-left: 3px;
+    }
+
+    .french-section-4-card-part-2{
+        position: absolute;
+        bottom : 80px;
+        left: 20px;
+        /* padding-top: 30px;
+        margin-left: 20px; */
+    }
+    .french-section-4-card-part-2-info-container{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    /* .french-section-4-card-part-2-btn-container{
+        position: absolute;
+    } */
+    .french-section-4-card-part-2-btn-container .btn{
+        position: absolute;
+        bottom: 25px;
+        left: 24px;
+        height: 45px;
+        width: 232px;
+        /* margin-left: 24px;
+        margin-top: 15px; */
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    .french-section-4-heading{
+        max-width: 200px;
+    }
+    .french-section-4 .french-country-img{
+        max-width: 170px;
+    }
+}

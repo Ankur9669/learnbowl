@@ -1,0 +1,52 @@
+.french-section-2{
+    background-color: #F7FAFB;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.french-section-2-heading{
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    color: #323232;
+}
+.french-section-2-video-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.french-video-frame{
+    width: 90%;
+    max-width: 1000px;
+    height: 90vh;
+    max-height: 650px;
+    border-radius: 20px;
+}
+.french-video-frame-thumbnail{
+    width: 90%;
+    max-height: 580px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+@media only screen and (max-width: 768px)
+{
+    .french-section-2-heading{
+        font-size: 26px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media only screen and (max-width: 620px)
+{
+    .french-video-frame{
+        width: 90%;
+        max-width: 1000px;
+        height: 300px;
+        max-height: 650px;
+        border-radius: 20px;
+    }
+}
