@@ -19,6 +19,11 @@
     margin: auto;
     margin-top: 90px;
 }
+.about-section-5-points-container-mob{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
 .about-section-5-blue-ellipse{
     position: absolute;
     bottom: -30px;
@@ -30,4 +35,37 @@
     top: -30px;
     left: -20px;
     z-index: 1;
+}
+@media only screen and (max-width: 732px)
+{
+    .about-section-5{
+        padding-bottom: 40px;
+    }
+    .about-section-5-heading{
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+    }
+    .about-section-5-points-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .points-img{
+        width: 90px;
+    }
+    .about-section-5-points-container-mob{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .about-section-5-blue-ellipse{
+        width: 80px;
+    }
+    .about-section-5-yellow-ellipse{
+        width: 80px;
+    }
 }

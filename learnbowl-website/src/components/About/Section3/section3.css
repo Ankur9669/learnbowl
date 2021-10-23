@@ -48,13 +48,22 @@
     color:rgba(45, 45, 45, 1);
 }
 .about-section-3-section-2{
+    position: relative;
     z-index: 100;
     margin: auto;
+}
+.about-section-3-panda{
+    position: absolute;
+    top: -145px;
+    right: -10px;
 }
 @media only screen and (max-width: 1132px)
 {
     .about-section-blue-ellipse{
        display: none;
+    }
+    .about-section-3-panda{
+        display: none;
     }
     .about-section-3{
         position: relative;

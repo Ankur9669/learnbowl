@@ -1,6 +1,8 @@
 import React from 'react'
 import "./section5.css";
-function Section5() {
+function Section5(prop) 
+{
+    const scrollToCardSection = prop.scrollToCardSection;
     return (
         <div className = "home-section-5">
             <img src = "home-section-5-quote-start.svg" alt = "image" className = "home-section-5-quote-start"></img>
@@ -14,7 +16,7 @@ function Section5() {
                         
                     </p>
                     <p className = "home-section-5-content-section-1-name">- Barack Obama</p>
-                    <button className = "home-section-5-content-section-1-btn">Browse Courses <span style = {{fontWeight: "600", fontSize: "25px"}}>&#8594;</span></button>
+                    <button className = "home-section-5-content-section-1-btn" onClick = {scrollToCardSection()}>Browse Courses <span style = {{fontWeight: "600", fontSize: "25px"}}>&#8594;</span></button>
                 </div>
                 <div className = "home-section-5-content-section-2">
                     <img src = "/home-section-5-img.svg" alt = "image" className = "home-section-5-img"></img>

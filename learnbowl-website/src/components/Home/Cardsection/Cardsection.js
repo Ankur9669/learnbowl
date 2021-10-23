@@ -1,9 +1,23 @@
 import React from 'react'
 import "./cardsection.css";
-function Cardsection() {
+import { useHistory } from "react-router-dom";
+function Cardsection(prop) {
+    const cardRef = prop.cardRef;
+    const history = useHistory();
+    function handleButtonClick(text)
+    {
+        if(text === "French")
+        {
+            history.push("french");
+        }
+        else if(text === "Vedic")
+        {
+            history.push("vedic");
+        }
+    }
     return (
-        <div className = "card-section">
-            <h2 className = "card-section-heading">What do you want to <span style = {{color: "#2D3092"}}>learn</span> today?</h2>
+        <div className = "card-section" ref = {cardRef}>
+            <h3 className = "card-section-heading">What do you want to <span style = {{color: "#2D3092"}}>learn</span> today?</h3>
             <div className = "cards">
                 <div className = "card">
                     <div className = "card-txt">
@@ -33,7 +47,7 @@ function Cardsection() {
                     <div className = "card-icon">
                         <img src = "/eiffel.svg" alt = "" className = "french-img"></img>
                     </div>
-                    <button className = "card-btn">Register for Free <span style = {{paddingLeft: "3px"}}><img src = "/rightArrow.svg" alt = "arrow" className = "rightArrow"></img></span></button>
+                    <button className = "card-btn" onClick = {() => handleButtonClick("French")}>Register for Free <span style = {{paddingLeft: "3px"}}><img src = "/rightArrow.svg" alt = "arrow" className = "rightArrow"></img></span></button>
                 </div>
                 <div className = "card">
                     <div className = "card-txt">
@@ -63,7 +77,7 @@ function Cardsection() {
                     <div className = "card-icon">
                         <img src = "/vedic.svg" alt = "" className = "vedic-img"></img>
                     </div>
-                    <button className = "card-btn">Register for Free <span style = {{paddingLeft: "3px"}}><img src = "/rightArrow.svg" alt = "arrow" className = "rightArrow"></img></span></button>
+                    <button className = "card-btn" onClick = {() => handleButtonClick("Vedic")}>Register for Free <span style = {{paddingLeft: "3px"}}><img src = "/rightArrow.svg" alt = "arrow" className = "rightArrow"></img></span></button>
                 </div>
             </div>
         </div>

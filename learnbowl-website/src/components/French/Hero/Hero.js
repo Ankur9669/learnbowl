@@ -3,15 +3,20 @@ import "./hero.css";
 import {useState, useEffect, useRef} from "react";
 import Axios from "../../../axios";
 import { useHistory, useLocation } from "react-router-dom";
-function Home() {
+import cityArray from '../../cityArray';
+function Home(prop) {
+    const heroFrenchRef = prop.heroFrenchRef;
     let history = useHistory();
     // let location = useLocation();
+    const [suggestions, setSuggestions] = useState([]);
+    const [showSuggestionList, setShowSuggestionList] = useState(true);
+    const [count, setCount] = useState(0);
     const [width, setWidth] = useState(window.innerWidth);
     const [isdateButton1Clicked, setDateButton1Clicked] = useState(true);
     const [isdateButton2Clicked, setDateButton2Clicked] = useState(false);
     const [name, setName] = useState("");
     const [contactNumber, setContactNumber] = useState("");
-    const [studentGrade, setStudentGrade] = useState("");
+    const [studentGrade, setStudentGrade] = useState("5");
     const [email, setEmail] = useState("");
     const [city, setCity] = useState("");
     const [whatsAppEnabled, setWhatsappEnabled] = useState(false);
@@ -19,13 +24,47 @@ function Home() {
     const [workshopdate2, setworkshopdate2] = useState("");
     const [workshopdate1value, setworkshopdate1value] = useState("");
     const [workshopdate2value, setworkshopdate2value] = useState("");
+    const [isNameValid, setNameValid] = useState(false);
+    const [isContactNumberValild, setContactNumberValid] = useState(false);
+    const [isEmailValid, setEmailValid] = useState(false);
+    const [isCityValid, setCityValid] = useState(false);
     const nameInputRef = useRef(null);
     const contactInputRef = useRef(null);
     const studentGradeInputRef = useRef(null);
     const emailInputRef = useRef(null);
     const cityInputRef = useRef(null);
+    
+    
+    useEffect(() => {
+        let matches = [];
+        console.log(showSuggestionList);
+        console.log(count);
+        if(city.length > 0)
+        {
+            matches = cityArray.filter(cityName => {
+                const regex = new RegExp(`${city}`, "gi");
+                return cityName.match(regex);
+            })
+        }
+        if(showSuggestionList === false)
+        {
+            setCount(count + 1);
+            // console.log(count);
+        }
+        if(showSuggestionList === false && parseInt(count) > parseInt(1))
+        {
+            setCount(0);
+            setShowSuggestionList(true);
+        }
+        setSuggestions(matches);
+    }, [city])
 
-    //console.log(window.location.href);
+    function onClickSuggestion(city)
+    {
+        setCity(city);
+        setSuggestions([]);
+        setShowSuggestionList(false);
+    }
     function handleResize()
     {
         setWidth(window.innerWidth);
@@ -53,6 +92,61 @@ function Home() {
             cityInputRef.current.focus();
         }
     }
+    //Function for validating name
+    function onNameChangeHandler(e)
+    {
+        setName(e.target.value);
+        let pattern = /^[a-zA-Z ]+$/;
+        let result = pattern.test(e.target.value);
+        if(result === false)
+        {
+            nameInputRef.current.style.border = "2px solid red";
+        }
+        else{
+            nameInputRef.current.style.border = "1px solid #BCBCBC";
+        }
+    }
+    //Function for validating number
+    function onContactNumberChangeHandler(e)
+    {
+        setContactNumber(e.target.value)
+        if(e.target.value.length === 10)
+        {
+            contactInputRef.current.style.border = "1px solid #BCBCBC";
+            
+        }
+        else{
+            contactInputRef.current.style.border = "2px solid red";
+        }
+    }
+    //Function for validating email
+    function onEmailChangeHandler(e)
+    {
+        setEmail(e.target.value)
+        let pattern = /\S+@\S+\.\S+/;
+        let result = pattern.test(e.target.value);
+        if(result === false)
+        {
+            emailInputRef.current.style.border = "2px solid red";
+        }
+        else{
+            emailInputRef.current.style.border = "1px solid #BCBCBC";
+        }
+    }
+    //Function for validating city
+    function onCityChangeHandler(e)
+    {
+        setCity(e.target.value)
+        let pattern = /^[A-Za-z]+$/;
+        let result = pattern.test(e.target.value);
+        if(result === false)
+        {
+            cityInputRef.current.style.border = "2px solid red";
+        }
+        else{
+            cityInputRef.current.style.border = "1px solid #BCBCBC";
+        }
+    }
     function handleFormSubmit(e)
     {
         e.preventDefault();
@@ -64,7 +158,6 @@ function Home() {
         else{
             date = workshopdate2value
         }
-      
 
         Axios.post("/postFrenchData", {
             name: name,
@@ -84,14 +177,42 @@ function Home() {
                 //console.log("sno is: " + response.data[0].sno);
                 localStorage.setItem("sno", response.data[0].sno);
                 localStorage.setItem("messageTriggered", 0);
-                history.push("/registrationsuccessful");
+
+                Axios.post("/postRegistrationhistory", {
+                    name: name,
+                    contactNumber: contactNumber,
+                    studentGrade: studentGrade,
+                    email: email, 
+                    city: city
+                })
+                .then(response => {
+                    history.push("/registrationsuccessful");    
+                })
+                .catch(err => {
+                    console.log(err);
+                    history.push("/registrationsuccessful");
+                });    
             }
             if(response.status === 201)
             {
                 //console.log("sno is: " + response.data.insertId);
                 localStorage.setItem("sno", response.data.insertId);
                 localStorage.setItem("messageTriggered", 0);
-                history.push("/registrationsuccessful");
+
+                Axios.post("/postRegistrationhistory", {
+                    name: name,
+                    contactNumber: contactNumber,
+                    studentGrade: studentGrade,
+                    email: email, 
+                    city: city
+                })
+                .then(response => {
+                    history.push("/registrationsuccessful");    
+                })
+                .catch(err => {
+                    console.log(err);
+                    history.push("/registrationsuccessful");
+                });
             }
         })
         .catch((err) => {
@@ -101,7 +222,6 @@ function Home() {
     useEffect(() => 
     {
         window.addEventListener("resize", handleResize);
-
         Axios.get("/getworkshopdates",{
             params: {
                 workshoptype: "French"
@@ -129,7 +249,7 @@ function Home() {
         }
     }, [])
     return (
-        <div className = "hero-french">
+        <div className = "hero-french" ref = {heroFrenchRef}>
             <img src = "/french-wave-1.svg" alt = "wave" className = "french-wave1"/>
             <img src = "/french-wave-2.svg" alt = "wave" className = "french-wave2"/>
             <img src = "/french-wave-3.svg" alt = "wave" className = "french-wave3"/>
@@ -137,8 +257,19 @@ function Home() {
             <div className = "hero-french-section-1">
                 <div className = "hero-french-section-1-text">
                     <p className = "hero-french-section-1-info-1">Learn from India’s best teachers!</p>
-                    <h1 className = "hero-french-section-1-heading">Learn<img src = "/frenchText.svg" alt = "frenchText"/>the fun way with us. Join Now!</h1>
-                    <p className = "hero-french-section-1-info-2">Learn French Online: Register for workshop</p>
+                    {/* <h1 className = "hero-french-section-1-heading">Learn<img src = "/frenchText.svg" alt = "frenchText"/>the fun way with us. Join Now!</h1> */}
+                    <h1 className = "hero-french-section-1-heading">Learn&nbsp;
+                        <div className = "frenchText">
+                            French
+                            <div className = "circle-right-top"></div>
+                            <div className = "circle-right-bottom"></div>
+                            <div className = "circle-left-top"></div>
+                            <div className = "circle-left-bottom"></div>
+                        </div> 
+                        &nbsp;the fun way with us. Join Now!
+                    </h1>
+                    {width > 768 && <p className = "hero-french-section-1-info-2">Learn French Online: Register for workshop</p>}
+                    {width < 768 && <p className = "hero-french-section-1-info-2">Learn Online: Register for workshop</p>}
                 </div>
                 <div className = "hero-french-section-1-img-container">
                     <img src= "frenchheroimg.svg" className = "hero-french-section-1-img"></img>
@@ -150,12 +281,12 @@ function Home() {
                 <form onSubmit = {(e) => handleFormSubmit(e)}> 
 
                     <div className = "input-box">
-                        <input type = "text" className = "input" ref = {nameInputRef} onChange = {(e) => setName(e.target.value)} value = {name} required></input>
+                        <input type = "text" className = "input" ref = {nameInputRef} onChange = {(e) => onNameChangeHandler(e)} value = {name} required></input>
                         <label className = "input-label" onClick = {() => handleLabelClick(1)}><span style = {{color: "red"}}>*</span>Name</label>
                     </div>
 
                     <div className = "input-box">
-                        <input type = "number" className = "input" ref = {contactInputRef} onChange = {(e) => setContactNumber(e.target.value)} value = {contactNumber} required></input>
+                        <input type = "number" className = "input" ref = {contactInputRef} onChange = {(e) => onContactNumberChangeHandler(e)} value = {contactNumber} required></input>
                         <label className = "input-label" onClick = {() => handleLabelClick(2)}><span style = {{color: "red"}}>*</span>Contact No</label>
                     </div>
 
@@ -172,13 +303,21 @@ function Home() {
                     </div>
 
                     <div className = "input-box">
-                        <input type = "email" className = "input" ref = {emailInputRef} onChange = {(e) => setEmail(e.target.value)} value = {email}></input>
+                        <input type = "email" className = "input" ref = {emailInputRef} onChange = {(e) => onEmailChangeHandler(e)} value = {email}></input>
                         <label className = "input-label" onClick = {() => handleLabelClick(4)}>Email</label>
                     </div>
 
                     <div className = "input-box">
-                        <input type = "text" className = "input" ref = {cityInputRef} onChange = {(e) => setCity(e.target.value)} value = {city} required></input>
+                        <input type = "text" className = "input" ref = {cityInputRef} onChange = {(e) => onCityChangeHandler(e)} value = {city} required></input>
                         <label className = "input-label" onClick = {() => handleLabelClick(5)}><span style = {{color: "red"}}>*</span>City</label>
+                        <div className = "dropdown-list">
+                            {suggestions.length >= 1 && showSuggestionList ? suggestions.map((suggestion, i) => {
+                                return <div key = {i} className = "dropdown-list-elements" onClick = {() => onClickSuggestion(suggestion)}>
+                                            {suggestion}
+                                        </div>
+                            }): <></>}
+                        </div>
+                        
                     </div>
                     <div className = "french-hero-section-2-date-container">
                         <button type = "button" className = {isdateButton1Clicked ? "french-hero-section-2-date-btn-active" : "french-hero-section-2-date-btn"} onClick = {()=>{setDateButton1Clicked(true);setDateButton2Clicked(false)}} value = {workshopdate1value}>{workshopdate1}</button>

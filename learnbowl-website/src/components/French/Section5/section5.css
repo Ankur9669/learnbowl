@@ -3,6 +3,8 @@
   padding-top:10px;
   padding-bottom: 80px;
   background-color: #F2FBFF;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .french-section-5-heading{
     font-size: 45px;
@@ -10,33 +12,23 @@
     text-align: center;
     color: #323232;
 }
-.french-section-5 .left-btn{
-  position: absolute;
-  bottom: 30px;
-  right: 200px;
-  background-color: #232495;
-  font-size: 18px;
-  color: white;
-  padding: 10px;
-  border-radius: 30px;
-  cursor: pointer;
-}
 
-.french-section-5 .right-btn{
-  position: absolute;
-  bottom: 30px;
-  right: 150px;
-  background-color: #232495;
-  font-size: 18px;
-  color: white;
-  padding: 10px;
-  border-radius: 30px;
-  cursor: pointer;
-}
-::-webkit-scrollbar {
-    display: none;
+  .french-section-5-carausel-container{
+    max-width: 1400px;
+    margin: auto;
   }
-  
+  .carausel-orange-ellipse{
+    position: absolute;
+    width: 200px;
+    top: -80px;
+    left: -80px;
+  }
+  .carausel-blue-ellipse{
+    position: absolute;
+    width: 150px;
+    bottom: -40px;
+    right: -40px;
+  }
   .reviews{
     display: flex;
     flex-direction: row;
@@ -58,7 +50,8 @@
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    box-shadow: 0px 2px 10px 10px rgba(90, 195, 255, 0.2);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 2px 10px 10px rgba(90, 195, 255, 0.2); */
   }
   .reviewer-info{
     display: flex;
@@ -89,6 +82,9 @@
   }
   @media only screen and (max-width: 768px)
   {
+    .french-section-5{
+      padding-bottom: 20px;
+    }
       .french-section-5-heading{
           font-size: 26px;
           font-weight: 500;
@@ -99,7 +95,7 @@
   }
   @media only screen and (max-width: 620px)
   {
-    .review-container{
+    /* .review-container{
       min-width: 227px;
       max-width: 227px;
       height: 370px;
@@ -107,6 +103,18 @@
       margin-right: 10px;
       margin-top: 20px;
       margin-bottom: 20px;
+    } */
+    .carausel-orange-ellipse{
+      position: absolute;
+      width: 100px;
+      top: -50px;
+      left: -30px;
+    }
+    .carausel-blue-ellipse{
+      position: absolute;
+      width: 80px;
+      bottom: -20px;
+      right: -20px;
     }
     .reviewer-review{
       font-size: 14px;

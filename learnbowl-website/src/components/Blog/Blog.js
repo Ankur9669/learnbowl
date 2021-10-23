@@ -1,6 +1,10 @@
 import React from 'react'
 import "./blog.css";
+import {useEffect} from "react";
 function Blog() {
+    useEffect(() => {
+        window.scrollTo(0,0);    
+    }, [])
     return (
         <div className = "blog">
             <h3 className = "blog-heading">Blog</h3>

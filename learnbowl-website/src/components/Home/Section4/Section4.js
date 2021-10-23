@@ -34,8 +34,8 @@ function Section4()
                 width: "15px",
                 height: "15px",
                 borderRadius: "200px",
-                marginTop: "10px",
-                marginBottom: "10px",
+                marginTop: "20px",
+                marginBottom: "40px",
                 backgroundColor: highlightActiveDot(index)
               }}
             />

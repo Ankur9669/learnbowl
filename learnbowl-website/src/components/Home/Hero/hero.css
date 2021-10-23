@@ -22,8 +22,8 @@ p{
 .dots{
     position: absolute;
     top: 0px;
-    left: 100px;
-    width: 80%;
+    left: 50px;
+    width: 90%;
     height: 100%;
 }
 .ellipse1{
@@ -180,7 +180,7 @@ p{
     margin-top: 6px;
     margin-left: 18px;
     color: #000130;
-    opacity: 60%;
+    opacity: 0.6;
     font-size: 18px;
     font-weight: 400;
 }

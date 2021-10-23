@@ -3,6 +3,8 @@
     padding-top:10px;
     padding-bottom: 80px;
     background-color: #F2FBFF;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .vedic-section-6-heading{
       font-size: 45px;
@@ -10,33 +12,11 @@
       color: #323232;
       text-align: center;
   }
-  .vedic-section-6 .left-btn{
-    position: absolute;
-    bottom: 30px;
-    right: 200px;
-    background-color: #232495;
-    font-size: 18px;
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    cursor: pointer;
+  .vedic-section-6-carausel-container{
+    max-width: 1400px;
+    margin: auto;
   }
   
-  .vedic-section-6 .right-btn{
-    position: absolute;
-    bottom: 30px;
-    right: 150px;
-    background-color: #232495;
-    font-size: 18px;
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-  ::-webkit-scrollbar {
-      display: none;
-    }
-    
     .reviews{
       display: flex;
       flex-direction: row;
@@ -47,7 +27,7 @@
       /* overflow: -moz-scrollbars-none; 
       -ms-overflow-style: none;  */
     }
-    .review-container{
+    /* .review-container{
       position: relative;
       min-width: 367px;
       max-width: 367px;
@@ -59,7 +39,7 @@
       margin-top: 20px;
       margin-bottom: 20px;
       box-shadow: 0px 2px 10px 10px rgba(90, 195, 255, 0.2);
-    }
+    } */
     .reviewer-info{
       display: flex;
       position: absolute;
@@ -94,7 +74,7 @@
     }
     @media only screen and (max-width: 620px)
     {
-      .review-container{
+      /* .review-container{
         min-width: 227px;
         max-width: 227px;
         height: 370px;
@@ -102,20 +82,9 @@
         margin-right: 10px;
         margin-top: 20px;
         margin-bottom: 20px;
-      }
+      } */
       .reviewer-review{
         font-size: 14px;
         color: #697694;
-      }
-      .vedic-section-6 .left-btn{
-        bottom: 30px;
-        right: 110px;
-        /* font-weight: 600; */
-      }
-      
-      .vedic-section-6 .right-btn{
-        bottom: 30px;
-        right: 50px;
-        
       }
     }

@@ -1,6 +1,20 @@
 import React from 'react';
 import "./section4.css";
+import {useState, useEffect} from "react";
 function Section4() {
+    const [width, setWidth] = useState(window.innerWidth);
+    useEffect(() => 
+    {
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        }
+    }, [])
+    function handleResize()
+    {
+        setWidth(window.innerWidth);
+    }
     return (
         <div className = "frenchschool-section-4">
             <img src = "/frenchpageWave.svg" alt = "wave" className = "wave1"/>
@@ -15,7 +29,7 @@ function Section4() {
                             <p className = "frenchschool-section-4-point-info-1">200+</p>
                             <p className = "frenchschool-section-4-point-info-2">Happy Students</p>
                         </div>
-                        <div className = "frenchschool-section-4-point" style = {{borderLeft: "4px solid #D65555"}}>    
+                        <div className = "frenchschool-section-4-point" style = {{borderLeft: "4px solid #D65555", marginTop : width > 768 ? "90px" : "0px"}}>    
                             <p className = "frenchschool-section-4-point-info-1">100+</p>
                             <p className = "frenchschool-section-4-point-info-2">Topics</p>
                         </div>
@@ -25,8 +39,8 @@ function Section4() {
                             <p className = "frenchschool-section-4-point-info-1">4000+</p>
                             <p className = "frenchschool-section-4-point-info-2">Teaching Hours</p>
                         </div>
-                        <div className = "frenchschool-section-4-point" style = {{borderLeft: "4px solid #56A219"}}>    
-                            <p className = "frenchschool-section-4-point-info-1">4.5</p>
+                        <div className = "frenchschool-section-4-point" style = {{borderLeft: "4px solid #56A219", marginTop : width > 768 ? "90px" : "0px"}}>    
+                            <p className = "frenchschool-section-4-point-info-1">4.5 <img alt = "image" src = "filledStar.svg"></img></p>
                             <p className = "frenchschool-section-4-point-info-2">User Rating</p>
                         </div>
                     </div>

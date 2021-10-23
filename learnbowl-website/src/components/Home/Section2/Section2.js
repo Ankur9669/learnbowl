@@ -1,8 +1,10 @@
 import React from 'react'
 import "./section2.css"
 import {useState, useEffect} from "react";
-function Section2()
+function Section2(prop)
 {
+    const scrollToCardSection = prop.scrollToCardSection;
+
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => 
     {
@@ -29,7 +31,7 @@ function Section2()
                 <p className = "home-section-2-section-1-info-1">More Than 270 Million People Speak French on Five Continents. Forbes reports French to be the language of the future, projecting it to be the “most spoken language by 2050”.
                 </p>
                 <p className = "home-section-2-section-1-info-2">Amazing, right? Join your peers from school and hop onto the French bandwagon! </p>
-                <button className = "register-btn">Explore Courses <span style = {{paddingLeft: "3px"}}><img src = "/rightArrow.svg" alt = "arrow" className = "rightArrow"></img></span></button>
+                <button className = "register-btn" onClick = {scrollToCardSection()}>Explore Courses <span style = {{paddingLeft: "3px"}}><img src = "/rightArrow.svg" alt = "arrow" className = "rightArrow"></img></span></button>
             </div>
 
             <div className = "home-section-2-section-2">

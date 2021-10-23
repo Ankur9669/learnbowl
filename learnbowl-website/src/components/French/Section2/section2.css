@@ -24,6 +24,7 @@
 }
 .french-video-frame-thumbnail{
     width: 90%;
+    height: auto;
     max-height: 580px;
     margin-left: 5%;
     margin-right: 5%;

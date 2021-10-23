@@ -10,6 +10,7 @@ function RegistrationSuccesfull()
     const [course, setCourse] = useState("");
     const [workshopValue, setWorkShopValue] = useState("");
     const [workshopDate, setWorkShopDate] = useState("");
+    const [workshopTime, setWorkShopTime] = useState("");
     const [contactNumber,setContactNumber] = useState("");
     const [LBRollNumber, setLBRollNumber] = useState("");
     //const params = new URLSearchParams(window.location.search);
@@ -52,42 +53,52 @@ function RegistrationSuccesfull()
     }, [contactNumber])
 
     useEffect(async() => {
-        await Axios.get("/getuser", {
-            params: {
-                sno:sno
-            }
-        })
-        .then(async(response) => {
-            //if status is 201 we redirect it to new page
-            if(response.status === 200)
-            {
-               // console.log(response.data[0]);
-                setName(response.data[0].studentName);
-                setCourse(response.data[0].course);
-                setWorkShopDate(response.data[0].workshopDates);
-                setLBRollNumber(response.data[0].LBRollNumber);
-                setContactNumber(response.data[0].contactNumber);
-                //console.log("contactNumber is: " + contactNumber);
-               // setWorkShopValue(response.data[0].workshopDates);
-                
-               await Axios.get("/getworkshopdate", {
-                    params: {
-                        workshopValue: response.data[0].workshopDates
-                    }
-                }).then((response) => {
-                    if(response.status === 200)
-                    {
-                        //console.log(response);
-                        setWorkShopDate(response.data[0].workshopdates);
-                    }
-                }).catch((err) => {
-                    console.log(err);
-                })
-            }
-        })
-        .catch((err) => {
-            console.log("Error Happened" + err);
-        })
+        //console.log(sno);
+        if(sno === undefined || sno === null)
+        {
+            history.push("/404");
+        }
+        else{
+            await Axios.get("/getuser", {
+                params: {
+                    sno:sno
+                }
+            })
+            .then(async(response) => {
+                //if status is 201 we redirect it to new page
+                if(response.status === 200)
+                {
+                   // console.log(response.data[0]);
+                    setName(response.data[0].studentName);
+                    setCourse(response.data[0].course);
+                    setWorkShopDate(response.data[0].workshopDates);
+                    setLBRollNumber(response.data[0].LBRollNumber);
+                    setContactNumber(response.data[0].contactNumber);
+                    //console.log("contactNumber is: " + contactNumber);
+                   // setWorkShopValue(response.data[0].workshopDates);
+                    
+                   await Axios.get("/getworkshopdate", {
+                        params: {
+                            workshopValue: response.data[0].workshopDates
+                        }
+                    }).then((response) => {
+                        if(response.status === 200)
+                        {
+                            //console.log(response);
+                            setWorkShopDate(response.data[0].workshopdates);
+                            setWorkShopTime(response.data[0].workshoptime);
+                        }
+                    }).catch((err) => {
+                        console.log(err);
+                    })
+                }
+            })
+            .catch((err) => {
+                console.log("Error Happened" + err);
+            })
+        }
+        localStorage.removeItem("sno");
+        //console.log(sno);
     }, [])
 
     return (
@@ -102,8 +113,9 @@ function RegistrationSuccesfull()
                         <br/><br/>
                         We here at LearnBowl extend you a warm welcome and hope that you remain by our side in many more learning adventures ahead! See you on <span style = {{color:"#2D3092", fontWeight: "600"}}>{workshopDate}</span>
                     </p>
+                    <p><span style = {{color:"#2D3092", fontWeight: "600"}}>Learnbowl Roll No. :</span> <b>{LBRollNumber}</b></p>
                     <p><span style = {{color:"#2D3092", fontWeight: "600"}}>Workskhop dates chosen:</span> <b>{workshopDate}</b></p>
-                    <p><span style = {{color:"#2D3092", fontWeight: "600"}}>Time:</span> <b>3:00 PM - 5:00 PM Everyday</b></p>
+                    <p><span style = {{color:"#2D3092", fontWeight: "600"}}>Time:</span> <b>{workshopTime} Everyday</b></p>
                     <button className = "home-btn" onClick = {handlebuttonClick}>Go to Home</button>
                 </div>
                 <div className = "registrationsuccessfull-section-2">

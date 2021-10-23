@@ -1,6 +1,8 @@
 .home-section-3{
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
     /* padding-left: 0px; */
 }
 .home-section-3-heading{
@@ -31,6 +33,9 @@
     grid-template-rows: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.home-section-3-txt-container{
+    max-width: 556px;
 }
 .home-section-3-txt-container-name{
     font-size: 40px;
@@ -63,9 +68,9 @@
 .home-section-3-section-2-txt-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    max-width: 556px;
-    margin: auto;
+    margin-left: 40px;
 }
 .home-section-3-section-2-img-container{
     display: flex;
@@ -120,45 +125,78 @@
         margin-top: 10px;
         margin-bottom: 20px;
     }
-    .home-section-3-section-1-img-container{
-        width: 75%;
-        margin-right: 25%;
-        justify-content: flex-end; 
+    .home-section-3-txt-container
+    {
+        margin-top: 20px;
         margin-bottom: 20px;
+        text-align: center;
+    }
+    .home-section-3-section-1-img-container{
+        /* width: 75%;
+        margin-right: 25%; */
+        position: relative;
+        margin-right: 0px;
+        justify-content: center; 
+        margin-bottom: 20px;
+    }
+    .background-after-img-section::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        color: black;
+        background-color: #F7FAFB;
+        z-index: 100;
     }
     .home-section-3-section-1-txt-container{
         margin: auto;
         margin-bottom: 10px;
+        text-align: center;
     }
     .home-section-3-section-2-img-container{
         grid-row-start: 1;
         grid-row-end: 2;
-        width: 75%;
-        margin-left: 25%;
-        justify-content: flex-start;
-        margin-bottom: 20px; 
+        position: relative;
+        margin-left: 0px;
+        justify-content: center; 
+        margin-bottom: 20px;
+    }
+    
+    .background-before-img-section{
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0%;
+        width: 25%;
+        height: 100%;
+        background-color: #F7FAFB;
+        z-index: 100;
     }
     .home-section-3-section-2-txt-container{
         margin: auto;
         margin-bottom: 10px;
+        text-align: center;
     }
     .home-section-3-section-3-img-container{
-        /* justify-content: center; 
-        margin-left: 20px;
-        margin-right: 20px;
-         background-color: #CCDBE4; 
-        margin-bottom: 10px; */
-        width: 75%;
-        margin-right: 25%;
-        justify-content: flex-end; 
+        position: relative;
+        margin-left: 0px;
+        justify-content: center; 
         margin-bottom: 20px;
     }
     .home-section-3-section-3-txt-container{
         margin: auto;
         margin-bottom: 10px;
+        text-align: center;
+    } 
+    .home-section-3-section-1-img{
+        max-width: 360px;
     }
-    
-   
+    .home-section-3-section-2-img{
+        max-width: 360px;
+    }
+    .home-section-3-section-3-img{
+        max-width: 360px;
+    }
 }
 @media only screen and (max-width: 732px)
 {
@@ -171,30 +209,20 @@
         margin-right: 20px;
     }
     .home-section-3-section-1-img{
-        width: 75%;
-        /* width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        max-width: 350px; */
+        max-width: 300px;
     }
     .home-section-3-section-2-img{
-        width: 75%;
-        /* width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        max-width: 350px; */
+        max-width: 300px;
     }
     .home-section-3-section-3-img{
-        width: 75%;
-        /* width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        max-width: 350px; */
+        max-width: 300px;
     }
     .home-section-3-txt-container
     {
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         text-align: center;
     }
     .home-section-3-txt-container-name{
@@ -211,20 +239,16 @@
         margin-bottom: 10px;
     }
 }
-@media screen and (max-width: 500px)
+@media only screen and (max-width: 600px)
 {
-    .home-section-3-section-1-img-container{
-        width: 80%;
-        margin-right: 20%;
-        
-    }
-    .home-section-3-section-2-img-container{
-        width: 80%;
-        margin-right: 20%;
-        
-    }
-    .home-section-3-section-3-img-container{
-        width: 80%;
-        margin-right: 20%;
+    .background-before-img-section{
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0%;
+        width: 12%;
+        height: 100%;
+        background-color: #F7FAFB;
+        z-index: 100;
     }
 }

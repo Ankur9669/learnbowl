@@ -1,7 +1,7 @@
 import React from 'react';
 import "./frenchschool.css";
 import Hero from './Hero/Hero';
-import Section1 from './Section1/Section1';
+import Section1 from '../French/Section1/Section1';
 import Section2 from './Section2/Section2';
 import Section3 from './Section3/Section3';
 import Section4 from './Section4/Section4';

@@ -13,6 +13,8 @@ function Section3() {
                 </p>
             </div>
             <div className = "about-section-3-section-2">
+                {/* <img src = "/about-section-3-panda.svg" alt = "image" className = "about-section-3-panda"></img> */}
+                <object data="/about-section-3-panda.svg" type="image/svg+xml" class="about-section-3-panda"></object>
                 <img src = "./about-section-img-3.svg" alt = "image" className = "about-section3-img"></img>
             </div>
         </div>

@@ -74,13 +74,14 @@
     /* height: 69px; */
 }
 .hero-vedic-section-1-img-container{
+    margin-top: 40px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .hero-vedic-section-1-img{
     width: 100%;
     max-width: 800px;
-    margin: auto;
+    /* margin: auto; */
 }
 /* Hero Section-1 Css End*/
 
@@ -181,11 +182,18 @@
     font-weight: 500;
     margin-right: 10px;
 }
+.checkbox{
+    width: 9.75px;
+    height: 9.75px;
+}
+.checkbox-label{
+    font-size: 12px;
+}
 .vedic-hero-section-2-bastille{
     position: absolute;
     width: 140px;
-    bottom: 0px;
-    right: 0px;
+    bottom: 20px;
+    right: 5px;
 }
 /* Hero Section-2 Css End */
 
@@ -210,8 +218,33 @@
         width: 100%;
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: 30px;
+        margin-top: 0px;
         margin-bottom: 20px;
+    }
+    .hero-vedic-section-1-info-1 {
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .hero-vedic-section-1-heading{
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        color: #323232;
+        max-width: 70vw;
+        /* text-align: start; */
+    }
+    .hero-vedic-section-1-info-2 {
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .hero-vedic-section-2{
         grid-row-start: 2;
@@ -220,24 +253,18 @@
         grid-column-end: 3;
         margin-left: 20px;
         margin-right: 20px;
+        padding-top: 20px;
+        margin-top: 10px;
         z-index: 100;
         /* width: 100%; */
     }
-    .hero-vedic-section-1-heading{
-        font-weight: 700;
-        font-size: 30px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        color: #323232;
-        max-width: 70vw;
-        /* text-align: start; */
-    }
+    
     .hero-vedic-section-1-heading img {
         vertical-align: middle;
         height: 46px;
         padding-bottom: 0px;
     }
-    .hero-vedic-section-1-img{
+    .hero-vedic-section-1-img-container{
         display: none
     }
     .vedic-hero-section-2-bastille{

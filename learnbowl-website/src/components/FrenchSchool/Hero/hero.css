@@ -44,12 +44,33 @@
     margin-top: 10px;
 }
 /* Hero Section-1 Css End*/
-
+.hero-frenchschool-section-1-info-1{
+    font-weight: 400;
+    color: #D65555;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hero-frenchschool-section-1-heading{
+    font-weight: 700;
+    font-size: 49px;
+    margin-bottom: 10px;
+    color: #323232;
+    max-width: 700px;
+    margin-left: auto;
+    word-spacing: 0.5px;
+}
+.hero-frenchschool-section-1-info-2{
+    font-weight: 400;
+    font-size: 20px;
+    color: #7D7D7D;
+    margin-bottom: 10px;
+}
 /* Hero Section-2 Css Start */
 .input-box-frenchschool{
     position: relative;
-    /* margin-top: 35px; */
-    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .input-frenchschool{
     box-sizing: border-box;
@@ -102,7 +123,7 @@
     border-radius: 20px;
     max-width: 498px;
     max-height: 500px;
-    margin-top: 45px;
+    margin-top: 70px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 20px;
@@ -218,7 +239,7 @@
         width: 100%;
         margin-left: 10px;
         margin-right: 10px;
-        margin-top: 30px;
+        margin-top: 0px;
         margin-bottom: 20px;
     }
     .hero-frenchschool-section-2{
@@ -228,6 +249,7 @@
         grid-column-end: 3;
         margin-left: 20px;
         margin-right: 20px;
+        margin-top: 10px;
         z-index: 100;
         /* width: 100%; */
     }
@@ -239,6 +261,31 @@
         color: #323232;
         max-width: 70vw;
         /* text-align: start; */
+    }
+    .hero-frenchschool-section-1-heading{
+        font-weight: 700;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        color: #323232;
+        max-width: 70vw;
+        /* text-align: start; */
+    }
+    .hero-frenchschool-section-1-info-1 {
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .hero-frenchschool-section-1-info-2 {
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .hero-frenchschool-section-1-heading img{
         vertical-align: middle;

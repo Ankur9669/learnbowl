@@ -3,7 +3,18 @@ import "./section4.css";
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import { slidesToShowPlugin } from '@brainhubeu/react-carousel';
-function Section4() {
+import {useHistory} from "react-router-dom";
+function Section4(prop) {
+    const scrollToHeroFrenchSection = prop.scrollToHeroFrenchSection;
+    const history = useHistory();
+    function handleIntermidiateClick()
+    {
+        history.push("/contact");
+    }
+    function handleAdvancedClick()
+    {
+        history.push("/contact");
+    }
     return (
         <div className = "french-section-4">
             <img src = "/frenchCountry.svg" alt = "french-country" className = "french-country-img"></img>
@@ -99,7 +110,7 @@ function Section4() {
                 ]
                 },
             }}>
-            <div className = "french-section-4-card">
+            <div className = "french-section-4-card" onClick = {() => handleIntermidiateClick()}>
                 <div className = "french-section-4-card-part-1">
                     <h4 >Classes 6-8</h4>
                     <h3>Basic Workshop</h3>
@@ -144,7 +155,7 @@ function Section4() {
                     <button className = "btn">Join Now</button>
                 </div>
           </div>
-          <div className = "french-section-4-card">
+          <div className = "french-section-4-card" onClick = {() => handleAdvancedClick()}>
                 <div className = "french-section-4-card-part-1">
                     <h4 >Classes 6-8</h4>
                     <h3>Basic Workshop</h3>
@@ -193,7 +204,7 @@ function Section4() {
                     <button className = "btn">Join Now</button>
                 </div>
           </div>
-          <div className = "french-section-4-card">
+          <div className = "french-section-4-card" onClick = {scrollToHeroFrenchSection()}>
                 <div className = "french-section-4-card-part-1">
                     <h4 >Classes 6-8</h4>
                     <h3>Basic Workshop</h3>

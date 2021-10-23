@@ -7,6 +7,7 @@ function Section3() {
             <div className = "home-section-3-section-1">
                 <div className = "home-section-3-section-1-img-container">
                     <img src = "/home-section3-section1-test.svg" alt = "image" className = "home-section-3-section-1-img"></img>
+                    <div className = "background-after-img-section"></div>
                 </div>
                 <div className = "home-section-3-section-1-txt-container">
                     <div className = "home-section-3-txt-container">
@@ -26,6 +27,7 @@ function Section3() {
                     </div>
                 </div>
                 <div className = "home-section-3-section-2-img-container">
+                    <div className = "background-before-img-section"></div>
                     <img src = "/home-section3-section1-test.svg" alt = "image" className = "home-section-3-section-2-img"></img>
                 </div>
             </div>
@@ -33,6 +35,7 @@ function Section3() {
             <div className = "home-section-3-section-3">
             <div className = "home-section-3-section-3-img-container">
                     <img src = "/home-section3-section1-test.svg" alt = "image" className = "home-section-3-section-3-img"></img>
+                    <div className = "background-after-img-section"></div>
                 </div>
                 <div className = "home-section-3-section-3-txt-container">
                     <div className = "home-section-3-txt-container">

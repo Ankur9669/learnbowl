@@ -68,7 +68,7 @@
     display: flex;
     margin-left: 25px;
     font-size: 40px;
-    font-weight: 550;
+    font-weight: 500;
     color: #1E2063;
 }
 .french-section-3-point-info-1 img{
@@ -79,7 +79,7 @@
     font-size: 18px;
     font-weight: 500;
     color: #000130;
-    opacity: 60%;
+    opacity: 0.6;
 }
 .french-section-3-section-1{
     grid-column-start: 1;
@@ -91,6 +91,7 @@
 .french-section-3-section-2{
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-bottom: 30px;
 }
 
 .french-section-3-section-2-content{

@@ -26,7 +26,7 @@ function Navbar(props)
     }, [])
 
     useEffect(() => {
-        console.log(location.pathname + "Ankur")
+        //console.log(location.pathname + "Ankur")
         if(location.pathname === "/")
         {
             setItemClickedNumber(1);
@@ -75,8 +75,8 @@ function Navbar(props)
     }
     return (
         <nav className = "navbar">
-            <div className = "navbar-icon">
-                <img src = "/learnbowlIcon.svg" className = "learnbowl-icon"></img>
+            <div className = "navbar-icon" onClick = {() => history.push("/")}>
+                <img src = "/learnbowlIcon1.svg" className = "learnbowl-icon" alt = "image"></img>
             </div>
             {
                 width > 940 ? 
@@ -89,44 +89,39 @@ function Navbar(props)
                 </ul> 
                 : 
                 <div>
-                    <img src = "/menu.svg" className = "menu-icon" onClick = {() => setMenuIconClicked(!isMenuIconClicked)}></img>
+                    <img src = "/menu.svg" className = "menu-icon" alt = "image" onClick = {() => setMenuIconClicked(!isMenuIconClicked)}></img>
                     {isMenuIconClicked ? 
                     <div className = "menu-items-mobiles">
                         <img alt = "image" src = "/orangeFullEllipse.svg" className = "nav-mob-orange-ellipse"/>
                         <img alt = "image" src = "/about-section-blue-ellipse.svg" className = "nav-mob-blue-ellipse"/>
                         <ul className = "menu-items">
                             <img alt = "close" src = "/navbar-close.svg" className = "nav-close-icon" onClick = {() => setMenuIconClicked(!isMenuIconClicked)}/>
-                            <li className = "items-active-mob" onClick = {() => handleClick(1)}>
+                            <li className = {itemClickedNumber == 1 ? "items-active-mob" : "items"} onClick = {() => handleClick(1)}>
                                 <div className = "mobile-nav-item">
                                     <img alt = "image" src = "/homeIconNav.svg"/>
                                     Home
                                 </div>
                             </li>
-                            <li className = "items" onClick = {() => handleClick(2)}>
+                            <li className = {itemClickedNumber == 2 ? "items-active-mob" : "items"} onClick = {() => handleClick(2)}>
                                 <div className = "mobile-nav-item">
                                     <img alt = "image" src = "/frenchIconNav.svg"/>
                                     French
                                 </div>
                             </li>
-                            <li className = "items" onClick = {() => handleClick(3)}>
+                            <li className = {itemClickedNumber == 3 ? "items-active-mob" : "items"} onClick = {() => handleClick(3)}>
                                 <div className = "mobile-nav-item">
                                     <img alt = "image" src = "/vedicIconNav.svg"/>
                                     Vedic Maths
                                 </div>
                             </li>
-                            <li className = "items" onClick = {() => handleClick(4)}>
-                                <div className = "mobile-nav-item">
-                                    <img alt = "image" src = "/blogIconNav.svg"/>
-                                    Blog
-                                </div>
-                            </li>
-                            <li className = "items" onClick = {() => handleClick(4)}>
+                            
+                            <li className = {itemClickedNumber == 4 ? "items-active-mob" : "items"} onClick = {() => handleClick(4)}>
                                 <div className = "mobile-nav-item">
                                     <img alt = "image" src = "/aboutIconNav.svg"/>
                                     About Us
                                 </div>
                             </li>
-                            <li className = "items" onClick = {() => handleClick(5)}>
+                            <li className = {itemClickedNumber == 5 ? "items-active-mob" : "items"} onClick = {() => handleClick(5)}>
                                 <div className = "mobile-nav-item">
                                     <img alt = "image" src = "/contact-section-call.svg"/>
                                     Contact us

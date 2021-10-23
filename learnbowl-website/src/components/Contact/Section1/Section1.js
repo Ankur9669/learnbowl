@@ -26,12 +26,12 @@ function Section1()
     {
         e.preventDefault();
         let isFormValid = false;
-        console.log(firstName);
-        console.log(lastName);
-        console.log(contactNumber);
-        console.log(email);
-        console.log(course);
-        console.log(message);
+        // console.log(firstName);
+        // console.log(lastName);
+        // console.log(contactNumber);
+        // console.log(email);
+        // console.log(course);
+        // console.log(message);
         const name = firstName + " " + lastName;
 
         if(contactNumber.length === 10)
@@ -107,27 +107,34 @@ function Section1()
                     following ways to reach us.
                 </p>
                 <div className = "points-container">
-                    <div className = "point">
-                        <img src = "/contact-section-call.svg" alt = "image"></img>
-                        <div className = "">
-                            <p className = "point-1">+91 7304074610</p>
-                            <p className = "point-2">Mon to Sat 9am to 9pm</p>
+                    <a href = "tel:91 7304074610" style = {{textDecoration:"none", color: "white"}}>
+                        <div className = "point">
+                            <img src = "/contact-section-call.svg" alt = "image" className = "contact-section-1-icon"></img>
+                            <div className = "">
+                                <p className = "point-1">+91 7304074610</p>
+                                <p className = "point-2">Mon to Sat 9am to 9pm</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className = "point">
-                        <img src = "/contact-section-call.svg" alt = "image"></img>
-                        <div className = "">
-                            <p className = "point-1">Aladdin Mansion</p>
-                            <p className = "point-2">Begumpet, Hyderabad 500016</p>
+                    </a>
+                    <a href = "https://maps.google.com/?q=learnbowl,Alladin Mansion, Begumpet, Hyderabad, Telangana 500016" target="_blank" style = {{textDecoration:"none", color: "white"}}>
+                        <div className = "point">
+                            <img src = "/location-icon-orange.svg" alt = "image" className = "contact-section-1-icon" style = {{width: "20px"}}></img>
+                            <div className = "">
+                                <p className = "point-1">Aladdin Mansion</p>
+                                <p className = "point-2">Begumpet, Hyderabad 500016</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className = "point">
-                        <img src = "/contact-section-call.svg" alt = "image"></img>
-                        <div className = "">
-                            <p className = "point-1">care@learnbowl.com</p>
-                            <p className = "point-2">Shoot us an E-mail!</p>
+                    </a>
+                    <a href = "mailto:care@learnbowl.com" target="_blank" style = {{textDecoration:"none", color: "white"}}>
+                        <div className = "point">
+                            <img src = "/email-icon-orange.svg" alt = "image" className = "contact-section-1-icon"></img>
+                            <div className = "">
+                                <p className = "point-1">care@learnbowl.com</p>
+                                <p className = "point-2">Shoot us an E-mail!</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                    
                     <div className = "social-section-1">
                         <a href = "https://www.facebook.com/learnbowl">
                             <img src = "/contactFacebook.svg" alt = "image" className = "facebook-icon"></img>

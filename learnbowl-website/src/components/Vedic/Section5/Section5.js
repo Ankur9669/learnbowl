@@ -3,7 +3,21 @@ import "./section5.css";
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+import {useHistory} from "react-router-dom";
 function Section5() {
+    const history = useHistory();
+    function handleBeginnersClick()
+    {
+        history.push("/contact");
+    }
+    function handleIntemidiateClick()
+    {
+        history.push("/contact");
+    }
+    function handleAdvancedClick()
+    {
+        history.push("/contact");
+    }
     return (
         <div className = "french-section-4">
         <h3 className = "french-section-4-heading">Our Popular <span style = {{color: "#2D3092"}}>Vedic Maths</span> Courses</h3>
@@ -72,7 +86,7 @@ function Section5() {
             ]
             },
         }}>
-        <div className = "french-section-4-card">
+        <div className = "french-section-4-card" onClick = {handleIntemidiateClick}>
             <div className = "french-section-4-card-part-1">
                 <h4 >Classes 6-8</h4>
                 <h3>Basic Workshop</h3>
@@ -117,7 +131,7 @@ function Section5() {
                 <button className = "btn">Join Now</button>
             </div>
       </div>
-      <div className = "french-section-4-card">
+      <div className = "french-section-4-card" onClick = {handleAdvancedClick}>
             <div className = "french-section-4-card-part-1">
                 <h4 >Classes 6-8</h4>
                 <h3>Basic Workshop</h3>
@@ -166,7 +180,7 @@ function Section5() {
                 <button className = "btn">Join Now</button>
             </div>
       </div>
-      <div className = "french-section-4-card">
+      <div className = "french-section-4-card" onClick = {handleBeginnersClick}>
             <div className = "french-section-4-card-part-1">
                 <h4 >Classes 6-8</h4>
                 <h3>Basic Workshop</h3>

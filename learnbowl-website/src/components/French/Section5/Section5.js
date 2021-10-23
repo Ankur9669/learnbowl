@@ -35,7 +35,7 @@ function Section5() {
                 width: "15px",
                 height: "15px",
                 borderRadius: "200px",
-                marginTop: "10px",
+                marginTop: "20px",
                 marginBottom: "10px",
                 backgroundColor: highlightActiveDot(index)
                 }}
@@ -44,8 +44,11 @@ function Section5() {
         };
     return (
         <div className = "french-section-5">
+            <img src= "/orangeFullEllipse.svg" alt = "image" className = "carausel-orange-ellipse"></img>
+            <img src= "/contact-blue-ellipse.svg" alt = "image" className = "carausel-blue-ellipse"></img>
             <h3 className = "french-section-5-heading">What our <span style = {{color: "#2D3092"}}>Students</span> Say</h3>
             <div className = "french-section-5-carausel-container">
+                
                 <Carousel
                         value={value}
                         onChange={onChange}
@@ -65,6 +68,47 @@ function Section5() {
                             }
                         },
                         ]}
+                        breakpoints={{
+                            1080: {
+                                plugins: [
+                                'infinite',
+                                'centered',
+                                { 
+                                    resolve: slidesToShowPlugin,
+                                    options: {
+                                    numberOfSlides: 2,
+                                    interval: 5000
+                                    }
+                                },
+                                {
+                                    resolve: autoplayPlugin,
+                                    options: {
+                                        interval: 5000
+                                    }
+                                }
+                            ]
+                            },
+                            480: {
+                                plugins: [
+                                'infinite',
+                                
+                                { 
+                                    resolve: slidesToShowPlugin,
+                                    options: {
+                                    numberOfSlides: 1.5,
+                                    interval: 5000
+                                    }
+                                },
+                                {
+                                    resolve: autoplayPlugin,
+                                    options: {
+                                        interval: 5000
+                                    }
+                                }
+                            ]
+                            },
+                            
+                        }}
                     >
 
                         <div className = "review-container">

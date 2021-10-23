@@ -94,6 +94,7 @@
 .frenchschool-section-3-section-2 .point:hover{
     background-color: white;
     border-radius: 100px;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
 }
 @media only screen and (max-width: 1080px)
 {

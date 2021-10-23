@@ -1,0 +1,80 @@
+.terms-and-conditions-header{
+    position: relative;
+    background-color: #4C4EAF;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.terms-and-conditions-heading{
+    font-size: 55px;
+    color: white;
+    font-weight: 500;
+    /* max-width: 800px; */
+    margin-top: 0px;
+    margin-bottom: 25px;
+    text-align: center;  
+}
+.terms-and-conditions-sub-heading{
+    display: block;
+    text-align: center;
+    color: #F4F4F4;
+    font-size: 24px;
+}
+.terms-and-conditions-orange-ellipse{
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 100px;
+}
+.terms-and-conditions-blue-ellipse{
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 100px;
+}
+.terms-and-conditions-content{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+.terms-and-conditions-content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #232323;
+    
+}
+@media only screen and (max-width: 800px)
+{
+    .terms-and-conditions-content{
+        max-width: 800px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 60px;
+    }
+}
+@media only screen and (max-width: 732px)
+{
+    .terms-and-conditions-heading{
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        margin-left: 20px;
+        margin-right: 20px;  
+    }
+    .terms-and-conditions-sub-heading{
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .terms-and-conditions-orange-ellipse{
+        width: 70px;
+    }
+    .terms-and-conditions-blue-ellipse{
+        width: 70px;
+    }
+    .terms-and-conditions-content p{
+        font-size: 14px;
+    }
+}

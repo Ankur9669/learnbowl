@@ -1,13 +1,13 @@
 .vedic-section-2{
     background: linear-gradient(180deg, rgba(203, 255, 151, 0.35) -18.95%, rgba(42, 166, 255, 0.35) 118.95%);
     border-radius: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     margin-top: 20px;
     margin-bottom: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
-    max-width: 1350px;
+    max-width: 1450px;
     margin: auto;
 }
 .vedic-section-2-points-container{
