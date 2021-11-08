@@ -185,6 +185,12 @@
     width: 150px;
     height: 45px;
     font-weight: 500;
+    transition: 0.3s;
+}
+.contact-section-1-section-2-form .submit-button:hover{
+    background-color: transparent;
+    color: #2D3092;
+    border: 2px solid #2D3092;
 }
 .modal-success{
     height: 100%;

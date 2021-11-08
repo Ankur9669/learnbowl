@@ -42,6 +42,7 @@
     max-width: 800px;
     margin: auto;
     margin-top: 10px;
+    object-fit: contain;
 }
 /* Hero Section-1 Css End*/
 .hero-frenchschool-section-1-info-1{
@@ -251,6 +252,7 @@
         margin-right: 20px;
         margin-top: 10px;
         z-index: 100;
+        max-height: max-content;
         /* width: 100%; */
     }
     .hero-frenchschool-section-1-heading{
@@ -301,14 +303,4 @@
         top: -130px;
         right: 0px;
     }
- 
-    @media only screen and (max-width: 380px){
-        .checkbox-label{
-            font-size: 14px;
-        }  
-        .checkbox{
-            margin-left: 10px;
-        }  
-    }
-    
 }

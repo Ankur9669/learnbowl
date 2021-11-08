@@ -65,6 +65,13 @@
     margin-left: 70px;
     margin-top: 10px;
     margin-bottom: 20px;
+    transition: 0.3s;
+}
+.frenchschool-section-3-section-1 .register-btn:hover{
+    background-color: transparent;
+    color: #2D3092;
+    border: 2px solid #2d3092;
+    
 }
 
 .frenchschool-section-3-section-2 .point{
@@ -161,6 +168,9 @@
         margin-bottom: 30px;
         margin-left: 20px;
         margin-right: 20px;
+        background-color: white;
+        border-radius: 100px;
+        box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
     }
 }
 @media only screen and (max-width: 768px)
@@ -170,6 +180,7 @@
     }
     .frenchschool-section-3-section-2 .point{
         max-width: 200px;
+        min-width: 150px;
         background-color: white;
         border-radius: 100px;
     }
@@ -177,7 +188,7 @@
         width: 45px;
     }
     .frenchschool-section-3-section-2 .point-info{
-        font-size: 18px;
+        font-size: 14px;
         color: #323232;
         font-weight: 500;
     }

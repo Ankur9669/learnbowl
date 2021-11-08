@@ -23,6 +23,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 30px;
 }
 .french-section-1-card{
     display: flex;
@@ -36,6 +37,11 @@
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
+}
+.french-section-1-icon{
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
 }
 .french-section-1-card-text{
     font-size: 18px;
@@ -82,6 +88,12 @@
     .french-section-1-card-text-mobile{
         font-size: 12px;
         font-weight: 520;
+    }
+    .french-section-1-icon-mobile{
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+        margin-right: 10px;
     }
     /* .french-section-1-card-text-mobile{
 

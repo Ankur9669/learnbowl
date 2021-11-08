@@ -152,8 +152,30 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
     cursor: pointer;
-
+    transition: 0.3s;
 }
+.down-arrow{
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+.hero-section-1-btn:hover{
+    background-color: #F7FAFB;
+    color: #2d3092;
+    border: 2px solid #2d3092;
+}
+.hero-section-1-btn:hover .down-arrow{
+    animation: down 1s forwards;
+    position: relative;
+}
+ @keyframes down {
+     from{
+         top: 3px;
+     }
+     to{
+         top: 8px;
+     }
+ }
 
 /* Hero Section-1 css End */
 
@@ -213,6 +235,11 @@ p{
 }
 @media only screen and (max-width: 1132px)
 {
+    .down-arrow{
+        font-size: 20px;
+        position: relative;
+        top: 3px;
+    }
     .hero{
         flex-direction: column;
         justify-content: center;

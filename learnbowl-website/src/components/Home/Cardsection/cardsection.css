@@ -61,7 +61,9 @@
     margin-bottom: 20px;
 }
 .card .rightArrow{
-    width: 19px;
+    position: relative;
+    font-size: 22px;
+    top: 3px;
 }
 .point{
     display: flex;
@@ -94,6 +96,23 @@
     border-radius: 0px 0px 20px 20px;
     color: #FFFFFF;
     font-size: 23px;
+    transition: 0.3s;
+}
+.card-btn:hover{
+    background-color: #F7FAFB;
+    color: #2d3092;
+    border: 2px solid #2d3092;
+}
+.card-btn:hover .rightArrow{
+    animation: goRight 3s forwards;
+}
+@keyframes goRight {
+    from{
+        left: 0px;
+    }
+    to{
+        left: 40px;
+    }
 }
 .card-info-img{
     width: 380px;  
@@ -179,7 +198,7 @@
         margin-bottom: 10px;
     }
     .point{
-        font-size: 16px;
+        font-size: 12px;
         margin-top: 8px;
         margin-bottom: 8px;
         /* vertical-align: middle; */
@@ -202,7 +221,7 @@
         margin-top: 15px; 
     }
     .card .rightArrow{
-        width: 14px;
+        font-size: 16px;
     }
 }
 

@@ -11,7 +11,7 @@ function Footer() {
         }
         if(buttonText === "Terms")
         {
-            
+            history.push("/terms");
         }
         if(buttonText === "About")
         {
@@ -23,7 +23,7 @@ function Footer() {
         }
         if(buttonText === "Vedic")
         {
-            history.push("/vedic");   
+            history.push("/vedicmaths");   
         }
         if(buttonText === "Blog")
         {
@@ -44,8 +44,8 @@ function Footer() {
                     <div className = "footer-top-line">
                     </div>
                     <div className = "footer-section-1-content">
-                        <a onClick = {() => handleClick("Privacy")}>
-                            <p className = "footer-section-points">Privacy Policy</p>
+                        <a onClick = {() => handleClick("Blog")}>
+                            <p className = "footer-section-points">Blogs</p>
                         </a>
                         <a onClick = {() => handleClick("Terms")}>
                             <p className = "footer-section-points">Terms and conditions</p>
@@ -92,9 +92,9 @@ function Footer() {
                         <a onClick = {() => handleClick("Vedic")}>
                             <p className = "footer-section-points">Vedic Maths</p>
                         </a>
-                        <a onClick = {() => handleClick("Blog")}>
+                        {/* <a onClick = {() => handleClick("Blog")}>
                             <p className = "footer-section-points">Blog</p>
-                        </a>
+                        </a> */}
                         <p className = "back-to-top-btn" onClick = {() => handleClick("Back")}>Back to top &#8743;</p>
                     </div>
                 </div>
@@ -126,8 +126,8 @@ function Footer() {
                 </div>
                 <div className = "footer-mobile-section-3">
                     <div className = "footer-mobile-section-3-section-1">
-                        <a onClick = {() => handleClick("Privacy")}>
-                            <p className = "footer-section-points">Privacy Policy</p>
+                        <a onClick = {() => handleClick("Blog")}>
+                            <p className = "footer-section-points">Blogs</p>
                         </a>
                         <a onClick = {() => handleClick("Terms")}>
                             <p className = "footer-section-points">Terms and conditions</p>
@@ -143,9 +143,9 @@ function Footer() {
                         <a onClick = {() => handleClick("Vedic")}>
                             <p className = "footer-section-points">Vedic Maths</p>
                         </a>
-                        <a onClick = {() => handleClick("Blog")}>
+                        {/* <a onClick = {() => handleClick("Blog")}>
                             <p className = "footer-section-points">Blog</p>
-                        </a>
+                        </a> */}
                     </div> 
                 </div>
                 <div className = "footer-mobile-section-4">

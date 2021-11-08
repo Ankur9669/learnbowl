@@ -29,10 +29,11 @@ function Section5() {
                         </div>
                     </a>
                     
-
-                    <div className = "about-section-5-point-container">
-                        <img src = "/about-section-4-section-5-linkedin.svg" alt = "image" className = "points-img"></img>
-                    </div>    
+                    <a href = "https://learnbowl.medium.com/" target = "_blank">
+                        <div className = "about-section-5-point-container">
+                            <img src = "/about-section-4-section-5-medium.svg" alt = "image" className = "points-img"></img>
+                        </div> 
+                    </a>
                 </div>
             </div>
         </div>

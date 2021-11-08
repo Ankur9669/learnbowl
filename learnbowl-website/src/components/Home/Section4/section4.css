@@ -38,16 +38,47 @@
 .home-section-4-card-pink-ellipse-mobile{
     display: none;
 }
-
+.home-section-4-card-orange-ellipse-mobile{
+    display: none;
+}
+.home-section-4-card-green-ellipse-mobile{
+    display: none;
+}
 .home-quote-start{
     position: absolute;
     top: -30px;
     left: -110px;
+    width: 65px;
 }
 .home-quote-end{
     position: absolute;
     bottom: -40px;
     right: 0px;
+    width: 65px;
+}
+.home-quote-start-orange{
+    position: absolute;
+    top: -20px;
+    left: -110px;
+    width: 55px;
+}
+.home-quote-end-orange{
+    position: absolute;
+    bottom: -40px;
+    right: 0px;
+    width: 55px;
+}
+.home-quote-start-green{
+    position: absolute;
+    top: -20px;
+    left: -110px;
+    width: 55px;
+}
+.home-quote-end-green{
+    position: absolute;
+    bottom: -40px;
+    right: 0px;
+    width: 55px;
 }
 
 .home-section-4-card-reviewer-container{
@@ -100,6 +131,24 @@
         width: 190px;
         border-radius: 10px;
     }
+    .home-section-4-card-orange-ellipse-mobile{
+        display: inherit;
+        position: absolute;
+        bottom: 0px;
+        left: -15px;
+        z-index: 1;
+        width: 220px;
+        border-radius: 10px;
+    }
+    .home-section-4-card-green-ellipse-mobile{
+        display: inherit;
+        position: absolute;
+        bottom: 0px;
+        left: -15px;
+        z-index: 1;
+        width: 220px;
+        border-radius: 10px;
+    }
     
     .home-quote-start{
         position: absolute;
@@ -112,6 +161,30 @@
         bottom: -10px;
         right: 0px;
         width: 30px;
+    }
+    .home-quote-start-orange{
+        position: absolute;
+        top: -15px;
+        left: -42px;
+        width: 25px;
+    }
+    .home-quote-end-orange{
+        position: absolute;
+        bottom: -10px;
+        right: 0px;
+        width: 25px;
+    }
+    .home-quote-start-green{
+        position: absolute;
+        top: -15px;
+        left: -42px;
+        width: 25px;
+    }
+    .home-quote-end-green{
+        position: absolute;
+        bottom: -10px;
+        right: 0px;
+        width: 25px;
     }
     .home-section-4-card-reviewer-container{
         position: absolute;

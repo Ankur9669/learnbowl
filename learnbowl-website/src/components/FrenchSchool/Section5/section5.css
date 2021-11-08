@@ -39,17 +39,6 @@
     display: none;
 }
 
-.home-quote-start{
-    position: absolute;
-    top: -30px;
-    left: -110px;
-}
-.home-quote-end{
-    position: absolute;
-    bottom: -40px;
-    right: 0px;
-}
-
 .frenchschool-section-5-card-reviewer-container{
     position: absolute;
     left: 80px;
@@ -101,18 +90,7 @@
         border-radius: 10px;
     }
     
-    .home-quote-start{
-        position: absolute;
-        top: -15px;
-        left: -42px;
-        width: 30px;
-    }
-    .home-quote-end{
-        position: absolute;
-        bottom: -10px;
-        right: 0px;
-        width: 30px;
-    }
+    
     .frenchschool-section-5-card-reviewer-container{
         position: absolute;
         left: 25px;

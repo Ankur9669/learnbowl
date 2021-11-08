@@ -2,6 +2,8 @@ import React from 'react'
 import "./section2.css"
 function Section2() {
     return (
+        <>
+        <h3 className = "vedic-section-2-heading">What  <span style = {{color: "#2D3092"}}>Learnbowl</span> Offers?</h3>
         <div className = "vedic-section-2">
             <div className = "vedic-section-2-points-container">
                 <div className = "vedic-section-2-points-mobile-section">
@@ -32,6 +34,7 @@ function Section2() {
                 </div>    
             </div>
         </div>
+        </>
     )
 }
 

@@ -188,15 +188,15 @@ function Section1()
                             <input type = "email" onChange = {(e) => setEmail(e.target.value)}></input>
                         </div>
                     </div>
-                    <label className = "course-label">Need help for a specific course? <span style = {{color: "#8D8D8D"}}> (Optional) </span></label>
+                    <label className = "course-label">Need help from the expert? <span style = {{color: "#8D8D8D"}}> (Optional) </span></label>
                     <div className = "contact-section-1-section-2-radiobuttons-container">
                         <div className = "radio-container">
-                            <input type = "radio" name = "course" onChange = {() => setCourse("French")}></input>
-                            <label for = "french">French</label>
+                            <input type = "radio" name = "course" onChange = {() => setCourse("Courses")}></input>
+                            <label for = "topic">Courses</label>
                         </div>
                         <div className = "radio-container">    
-                            <input type = "radio" name = "course" onChange = {() => setCourse("Vedic")}></input>
-                            <label for = "Vedic">Vedic Maths</label>
+                            <input type = "radio" name = "course" onChange = {() => setCourse("Jobs")}></input>
+                            <label for = "subject">Jobs</label>
                         </div>
                         <div className = "radio-container">
                             <input type = "radio" name = "course" onChange = {() => setCourse("Other")}></input>

@@ -1,17 +1,27 @@
 import React from 'react'
 import "./section2.css";
-import {useState} from "react";
+import {useState, useRef, useEffect} from "react";
 function Section2() 
 {
+    const iframeRef = useRef();
     const [isVideoClicked, setVideoClicked] = useState(false);
+
+    useEffect(() => {
+        //It will autoplay the iframe
+
+        if(isVideoClicked === true)
+        {
+            iframeRef.current.src = iframeRef.current.src + "?autoplay=1&mute=0";
+        }
+    }, [isVideoClicked])
     return (
         <div className = "frenchschool-section-2">
             <h3 className = "frenchschool-section-2-heading">A  <span style = {{color: "#2D3092"}}>Glimpse</span> of our frenchschool Workshop</h3>
             <div className = "frenchschool-section-2-video-container"  onClick = {() => setVideoClicked(true)}>
-                <iframe style = {isVideoClicked ? {} : {display: "none"}} className="frenchschool-video-frame" src="https://www.youtube.com/embed/2aWJuS1HEKs?autoplay=1&mute=1" 
+            <iframe style = {isVideoClicked ? {} : {display: "none"}} className="french-video-frame" src="https://www.youtube.com/embed/KqxwvWdNbSY" 
                        title="YouTube video player" frameborder="0" 
-                       allow="accelerometer; autoplay=true; clipboard-write; 
-                       encrypted-media; gyroscope; picture-in-picture" 
+                       allow="accelerometer; autoplay; clipboard-write; 
+                       encrypted-media; gyroscope; picture-in-picture" ref = {iframeRef}
                        allowfullscreen></iframe>
 
                 <img style = {isVideoClicked ? {display: "none"} : {}} src = "/frenchVideoThumbnail1.svg" className = "frenchschool-video-frame-thumbnail"></img>

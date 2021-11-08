@@ -139,6 +139,12 @@
     background-color: #2D3092;
     border-radius: 15px;
     color: white;
+    transition: 0.3s;
+}
+.french-section-4-card-part-2-btn-container .btn:hover{
+    background-color: #F7FAFB;
+    color: #2d3092;
+    border: 2px solid #2d3092;
 }
 /* card part-2 css end */
 @media only screen and (max-width: 768px)
@@ -200,7 +206,7 @@
         margin-bottom: 15px;
     }
     .french-section-4-card-part-1 p{
-        font-size: 18px;
+        font-size: 16px;
         vertical-align: middle;
         margin-left: 3px;
     }
@@ -209,16 +215,23 @@
         position: absolute;
         bottom : 80px;
         left: 20px;
-        /* padding-top: 30px;
-        margin-left: 20px; */
     }
+    
     .french-section-4-card-part-2-info-container{
         margin-top: 20px;
         margin-bottom: 10px;
     }
-    /* .french-section-4-card-part-2-btn-container{
-        position: absolute;
-    } */
+    .french-section-4-card-part-2-info-container .info{
+        font-size: 12px;
+    }
+    .discounted-price p{
+        font-size: 24px;
+    }
+    .real-price p{
+        color: #5E95FF;
+        font-weight: 500;
+        font-size: 12px;
+    }
     .french-section-4-card-part-2-btn-container .btn{
         position: absolute;
         bottom: 25px;

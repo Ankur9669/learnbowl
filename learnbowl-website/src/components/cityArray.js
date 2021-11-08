@@ -1,3 +1,4 @@
+//This is the list of the cities
 const cityArray = [
     "Mumbai",
     "Bengaluru",

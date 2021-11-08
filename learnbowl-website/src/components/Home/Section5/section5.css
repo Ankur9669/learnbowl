@@ -28,8 +28,10 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-.home-section-5-content-section-1 .rightArrow{
-    color: #2d3092;
+.home-section-5-right-arrow{
+    position: relative;
+    top: 3px;
+    font-size: 20px;
 }
 .home-section-5-content-section-1-txt{
     position: relative;
@@ -44,12 +46,12 @@
 .quote-start-white{
     position: absolute;
     top: -15px;
-    left: -70px;   
+    left: -65px;   
 }
 .quote-end-white{
-    /* position: absolute; */
+    position: absolute;
     bottom: 5px;
-    right: 70px;
+    /* right: 0px; */
 }
 .home-section-5-content-section-1-name{
     font-family: 'Nothing You Could Do', cursive;
@@ -72,6 +74,23 @@
     /* margin-left: 10vw; */
     margin-top: 20px;
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+.home-section-5-content-section-1-btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.home-section-5-content-section-1-btn:hover .home-section-5-right-arrow{
+    animation: goRight 3s forwards;
+}
+@keyframes goRight {
+    from{
+        left: 0px;
+    }
+    to{
+        left: 20px;
+    }
 }
 .home-section-5-quote-start{
     position: absolute;
@@ -100,12 +119,12 @@
     .quote-start-white{
         position: absolute;
         top: -15px;
-        left: -40px;   
+        /* left: -45px;    */
     }
     .quote-end-white{
-        /* position: absolute; */
-        bottom: -10px;
-        right: 30px;
+        position: absolute;
+        bottom: 10px;
+        /* right: 50px; */
     }
     .home-section-5-content-section-1-txt{
        text-align: center;
@@ -135,10 +154,10 @@
         left: 0px;   
     }
     .quote-end-white{
+        position: relative;
         width: 24px;
-        /* position: absolute; */
-        bottom: -10px;
-        right: 30px;
+        bottom: 0px;
+        right: 0px;
     }
     .home-section-5-content-section-1-txt{
         font-size: 22px;
@@ -154,6 +173,9 @@
          width: 200px;
          font-size: 14px;
          height: 50px;
+     }
+     .home-section-5-right-arrow{
+         font-size: 14px;
      }
      .home-section-5-img{
         max-width: 300px;

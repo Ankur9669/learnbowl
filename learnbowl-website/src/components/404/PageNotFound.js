@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./pagenotfound.css";
 import { useHistory } from "react-router-dom";
 function PageNotFound() 
 {
     const history = useHistory();
 
+    useEffect(() => {
+        document.title = "Online French Learning-Best Teachers for School, College Students";
+    }, [])
     function handleButtonClick(){
         history.push("/");
     }

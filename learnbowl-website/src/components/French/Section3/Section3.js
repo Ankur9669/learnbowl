@@ -26,11 +26,11 @@ function Section3() {
                 <div className = "french-section-3-points">
                     <div>
                         <div className = "french-section-3-point" style = {{borderLeft: "4px solid #FFB300"}}>    
-                            <p className = "french-section-3-point-info-1">200+</p>
+                            <p className = "french-section-3-point-info-1">5000+</p>
                             <p className = "french-section-3-point-info-2">Happy Students</p>
                         </div>
                         <div className = "french-section-3-point" style = {{borderLeft: "4px solid #D65555", marginTop : width > 768 ? "90px" : "0px"}}>    
-                            <p className = "french-section-3-point-info-1">3000+</p>
+                            <p className = "french-section-3-point-info-1">20000+</p>
                             <p className = "french-section-3-point-info-2">Teaching Hours</p>
                         </div>
                     </div>

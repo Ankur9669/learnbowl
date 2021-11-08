@@ -1,6 +1,7 @@
 import React from 'react'
 import "./hero.css";
 import {useState, useEffect} from "react";
+import { AiOutlineArrowDown } from 'react-icons/ai'
 function Hero(prop) 
 {
     const [width, setWidth] = useState(window.innerWidth);
@@ -38,7 +39,7 @@ function Hero(prop)
                 <p className = "hero-section-1-info-2">Learn your desired language in the 
                 most fun way! From anywhere, anytime!
                 </p>
-                {width > 1132 ? <button className = "hero-section-1-btn" onClick = {scrollToCardSection()}>Get Started <span style = {{paddingLeft: "5px"}}><img src = "/downArrow.svg" alt = "arrow" width = "12px"></img></span></button>: <></>}
+                {width > 1132 ? <button className = "hero-section-1-btn" onClick = {scrollToCardSection()}>Get Started <span className = "down-arrow"><AiOutlineArrowDown/></span></button>: <></>}
             </div>
             <div className = "hero-section-2">
                 <img src = "/homepage-img.svg" alt = "" style = {{zIndex: "1000"}}></img>
@@ -50,8 +51,8 @@ function Hero(prop)
                         <div className = "hero-section-3-content-number" style = {{borderBottom: "3px solid #FFB300"}}>
                             01
                         </div>
-                        <div className = "hero-section-3-content-text">
-                            250+
+                        <div className = "hero-section-3-content-text" style = {{marginLeft: "23px"}}>
+                            5000+
                             <br/>
                             Happy Students
                         </div>
@@ -74,7 +75,7 @@ function Hero(prop)
                             03
                         </div>
                         <div className = "hero-section-3-content-text">
-                            3000+
+                            20000+
                             <br/>
                             Teaching Hours
                         </div>
@@ -91,7 +92,7 @@ function Hero(prop)
                     </div>
                 </div>   
             </div>
-            {width < 1132 ? <button className = "hero-section-1-btn" onClick = {scrollToCardSection()}>Get Started <span style = {{paddingLeft: "5px"}}><img src = "/downArrow.svg" alt = "arrow" width = "12px"></img></span></button>: <></>}
+            {width < 1132 ? <button className = "hero-section-1-btn" onClick = {scrollToCardSection()}>Get Started <span className = "down-arrow"><AiOutlineArrowDown/></span></button>: <></>}
         </div>
     )
 }

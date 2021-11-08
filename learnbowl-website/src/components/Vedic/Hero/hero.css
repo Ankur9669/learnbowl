@@ -71,10 +71,11 @@
     vertical-align: middle;
     padding-bottom: 5px;
     margin-left: -1px;
+    object-fit: contain;
     /* height: 69px; */
 }
 .hero-vedic-section-1-img-container{
-    margin-top: 40px;
+    margin-top: 0px;
     display: flex;
     /* justify-content: center; */
 }
@@ -183,11 +184,11 @@
     margin-right: 10px;
 }
 .checkbox{
-    width: 9.75px;
-    height: 9.75px;
+    width: 15px;
+    height: 15px;
 }
 .checkbox-label{
-    font-size: 12px;
+    font-size: 15px;
 }
 .vedic-hero-section-2-bastille{
     position: absolute;
@@ -274,13 +275,6 @@
         right: 0px;
     }
  
-    @media only screen and (max-width: 380px){
-        .checkbox-label{
-            font-size: 14px;
-        }  
-        .checkbox{
-            margin-left: 10px;
-        }  
-    }
+   
     
 }

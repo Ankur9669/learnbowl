@@ -43,7 +43,7 @@ function Section4()
       };
     return (
         <div className = "home-section-4">
-            <h3 className = "home-section-4-heading">Our <span style = {{color: "#2D3092"}}>Accomplishments</span></h3>
+            <h3 className = "home-section-4-heading">Our <span style = {{color: "#2D3092"}}>Success Stories</span></h3>
             <div className = "home-section-4-caraousel-container">
                 <Carousel
                     value={value}
@@ -59,7 +59,7 @@ function Section4()
                         },
                     ]}
                     breakpoints={{
-                    2500: {
+                    4000: {
                         plugins: [
                         'infinite',
                         'centered',
@@ -169,6 +169,7 @@ function Section4()
                     ]
                     },
                 }}>
+                    {/* Card one */}
                     <div className = "home-section-4-card">
                         <img src = "/home-half-pink-ellipse.svg" alt = "" className = "home-section-4-card-pink-ellipse"></img>
                         <img src = "/home-half-pink-ellipse-mobile.svg" alt = "" className = "home-section-4-card-pink-ellipse-mobile"></img>
@@ -186,38 +187,44 @@ function Section4()
                             <p className = "reviewer-place">St. Mary’s Kolkata</p>
                          </div>
                     </div>
+                    {/* Card two */}
                     <div className = "home-section-4-card">
-                    <img src = "/home-half-pink-ellipse.svg" alt = "" className = "home-section-4-card-pink-ellipse"></img>
-                    <img src = "/home-half-pink-ellipse-mobile.svg" alt = "" className = "home-section-4-card-pink-ellipse-mobile"></img>
+                    <img src = "/home-half-orange-ellipse.svg" alt = "" className = "home-section-4-card-pink-ellipse"></img>
+                    <img src = "/home-half-orange-ellipse-mobile.svg" alt = "" className = "home-section-4-card-orange-ellipse-mobile"></img>
                         <p className = "home-section-4-card-text">
-                            <img src = "/home-quote-start.svg" className = "home-quote-start" alt = "image"></img>
-                            <img src = "/home-quote-end.svg" className = "home-quote-end" alt = "image"></img>
-                            Being a language teacher myself, 
-                            I highly recommend that students sign up for this French 
-                            workshop because it expands the students’ horizons. It teaches them how to communicate and build relationships, and also about various cultures. This is very important to grow holistically. They have started understanding and appreciating literature
-                            more. I definitely recommend and urge all students to give this a go.
+                            <img src = "/orange-quote-start.svg" className = "home-quote-start-orange" alt = "image"></img>
+                            <img src = "/orange-quote-end.svg" className = "home-quote-end-orange" alt = "image"></img>
+                            Our students loved the workshops and we received great feedback from 
+                            them and their parents. It inculcated a sense of cultural exploration 
+                            and a zeal to learn more about the French culture among students. 
+                            The sessions were highly interactive with instant doubt-clearing. 
+                            We highly recommend this course – especially if 
+                            you are a school student because a foreign language opens up a world of opportunities. 
                          </p>
                          <div className = "home-section-4-card-reviewer-container">
-                            <p className = "reviewer-name">Ms. Asha Jaisingh</p>
-                            <p className = "reviewer-designation">Teacher</p>
-                            <p className = "reviewer-place">St. Mary’s Kolkata</p>
+                            <p className = "reviewer-name">Ms. Radhika Lobo</p>
+                            <p className = "reviewer-designation">Principal</p>
+                            <p className = "reviewer-place">DPS Banglore</p>
                          </div>
                     </div>
+                    {/* Card Three */}
                     <div className = "home-section-4-card">
-                    <img src = "/home-half-pink-ellipse.svg" alt = "" className = "home-section-4-card-pink-ellipse"></img>
-                    <img src = "/home-half-pink-ellipse-mobile.svg" alt = "" className = "home-section-4-card-pink-ellipse-mobile"></img>
+                    <img src = "/home-half-green-ellipse.svg" alt = "image" className = "home-section-4-card-pink-ellipse"></img>
+                    <img src = "/home-half-green-ellipse-mobile.svg" alt = "image" className = "home-section-4-card-green-ellipse-mobile"></img>
                         <p className = "home-section-4-card-text">
-                            <img src = "/home-quote-start.svg" className = "home-quote-start" alt = "image"></img>
-                            <img src = "/home-quote-end.svg" className = "home-quote-end" alt = "image"></img>
-                            Being a language teacher myself, 
-                            I highly recommend that students sign up for this French 
-                            workshop because it expands the students’ horizons. It teaches them how to communicate and build relationships, and also about various cultures. This is very important to grow holistically. They have started understanding and appreciating literature
-                            more. I definitely recommend and urge all students to give this a go.
+                            <img src = "/green-quote-start.svg" className = "home-quote-start-green" alt = "image"></img>
+                            <img src = "/green-quote-end.svg" className = "home-quote-end-green" alt = "image"></img>
+                            In this day and age, it is very important to adapt. 
+                            French is growing to be one of the most spoken languages in the world. 
+                            LearnBowl approached our students and we have only received 
+                            great feedback ever since. Our students found these classes interactive 
+                            and found many key takeaways. The team is very 
+                            supportive and makes us look forward to many more such workshops for our students
                          </p>
                          <div className = "home-section-4-card-reviewer-container">
-                            <p className = "reviewer-name">Ms. Asha Jaisingh</p>
-                            <p className = "reviewer-designation">Teacher</p>
-                            <p className = "reviewer-place">St. Mary’s Kolkata</p>
+                            <p className = "reviewer-name">Mr. Ram Goarty</p>
+                            <p className = "reviewer-designation">Pricipal</p>
+                            <p className = "reviewer-place">DPS Mumbai</p>
                          </div>
                     </div> 
                 </Carousel>

@@ -23,28 +23,28 @@ function Section1()
             {width > 768 ? 
             <div className = "french-section-1-cards">
                 <div className = "french-section-1-card">
-                    <lord-icon trigger="hover" src="lottie.json"  style={{width:"100px",height:"100px"}}></lord-icon>
+                    <img src = "/french-section-1-icon-1.png" alt = "icon1" className = "french-section-1-icon"></img>
+                    <h4 className = "french-section-1-card-text">Boosts <br/><span style = {{color: "#2D3092"}}>Confidence</span></h4>
+                </div>
+                <div className = "french-section-1-card">
+                    {/* <img src = "/brainIcon.svg" className = "french-section-1-card-img"></img> */}
+                    <img src = "/french-section-1-icon-2.png" alt = "icon1" className = "french-section-1-icon"></img>
                     <h4 className = "french-section-1-card-text">Facilitates overall  <br/><span style = {{color: "#2D3092"}}>Personality Development</span></h4>
                 </div>
                 <div className = "french-section-1-card">
                     {/* <img src = "/brainIcon.svg" className = "french-section-1-card-img"></img> */}
-                    <lord-icon trigger="hover" src="lottie.json"  style={{width:"100px",height:"100px"}}></lord-icon>
-                    <h4 className = "french-section-1-card-text">Facilitates overall  <br/><span style = {{color: "#2D3092"}}>Personality Development</span></h4>
+                    <img src = "/french-section-1-icon-3.png" alt = "icon1" className = "french-section-1-icon"></img>
+                    <h4 className = "french-section-1-card-text">Enhances  <br/><span style = {{color: "#2D3092"}}>creative thinking</span></h4>
                 </div>
                 <div className = "french-section-1-card">
                     {/* <img src = "/brainIcon.svg" className = "french-section-1-card-img"></img> */}
-                    <lord-icon trigger="hover" src="lottie.json"  style={{width:"100px",height:"100px"}}></lord-icon>
-                    <h4 className = "french-section-1-card-text">Facilitates overall  <br/><span style = {{color: "#2D3092"}}>Personality Development</span></h4>
+                    <img src = "/french-section-1-icon-4.png" alt = "icon1" className = "french-section-1-icon"></img>
+                    <h4 className = "french-section-1-card-text">Harnesses  <br/><span style = {{color: "#2D3092"}}>decision making</span></h4>
                 </div>
                 <div className = "french-section-1-card">
                     {/* <img src = "/brainIcon.svg" className = "french-section-1-card-img"></img> */}
-                    <lord-icon trigger="hover" src="lottie.json"  style={{width:"100px",height:"100px"}}></lord-icon>
-                    <h4 className = "french-section-1-card-text">Facilitates overall  <br/><span style = {{color: "#2D3092"}}>Personality Development</span></h4>
-                </div>
-                <div className = "french-section-1-card">
-                    {/* <img src = "/brainIcon.svg" className = "french-section-1-card-img"></img> */}
-                    <lord-icon trigger="hover" src="lottie.json"  style={{width:"100px",height:"100px"}}></lord-icon>
-                    <h4 className = "french-section-1-card-text">Boosts <br/><span style = {{color: "#2D3092"}}>Brainpower</span></h4>
+                    <img src = "/french-section-1-icon-5.png" alt = "icon1" className = "french-section-1-icon"></img>
+                    <h4 className = "french-section-1-card-text">Develops <br/><span style = {{color: "#2D3092"}}>networking skills </span></h4>
                 </div>
             </div> 
             : 
@@ -52,28 +52,28 @@ function Section1()
                 <div className = "french-section-1-cards-mobile">
                     <div>
                         <div className = "french-section-1-card-mobile">
-                            <lord-icon trigger="hover" src="lottie.json" style={{width:"35px",height:"35px"}}></lord-icon>
-                            <h4 className = "french-section-1-card-text-mobile">Enhances decision- <br/><span style = {{color: "#2D3092"}}>making</span></h4>
+                        <img src = "/french-section-1-icon-1.png" alt = "icon1" className = "french-section-1-icon-mobile"></img>
+                            <h4 className = "french-section-1-card-text-mobile">Boosts <br/><span style = {{color: "#2D3092"}}>Confidence</span></h4>
                         </div>
                         <div className = "french-section-1-card-mobile">
-                            <lord-icon trigger="hover" src="lottie.json" style={{width:"35px",height:"35px"}}></lord-icon>
+                        <img src = "/french-section-1-icon-2.png" alt = "icon1" className = "french-section-1-icon-mobile"></img>
                             <h4 className = "french-section-1-card-text-mobile">Facilitates Personality <br/><span style = {{color: "#2D3092"}}>Development</span></h4>
                         </div>
                     </div>
                     <div>
                         <div className = "french-section-1-card-mobile">
-                            <lord-icon trigger="hover" src="lottie.json" style={{width:"35px",height:"35px"}}></lord-icon>
-                            <h4 className = "french-section-1-card-text-mobile">Increases education <br/><span style = {{color: "#2D3092"}}>Opportunity</span></h4>
+                        <img src = "/french-section-1-icon-3.png" alt = "icon1" className = "french-section-1-icon-mobile"></img>
+                            <h4 className = "french-section-1-card-text-mobile">Enhances <br/><span style = {{color: "#2D3092"}}>creative thinking</span></h4>
                         </div>
                         <div className = "french-section-1-card-mobile">
-                            <lord-icon trigger="hover" src="lottie.json" style={{width:"35px",height:"35px"}}></lord-icon>
-                            <h4 className = "french-section-1-card-text-mobile">Improves networking <br/><span style = {{color: "#2D3092"}}>skills</span></h4>
+                        <img src = "/french-section-1-icon-4.png" alt = "icon1" className = "french-section-1-icon-mobile"></img>
+                            <h4 className = "french-section-1-card-text-mobile">Harnesses <br/><span style = {{color: "#2D3092"}}>decision making</span></h4>
                         </div>
                     </div>
                 </div>
                 <div className = "french-section-1-card-mobile-row-3">
-                    <lord-icon trigger="hover" src="lottie.json" style={{width:"35px",height:"35px"}}></lord-icon>
-                    <h4 className = "french-section-1-card-text-mobile">Increases focus <br/><span style = {{color: "#2D3092"}}>and concentration</span></h4>
+                <img src = "/french-section-1-icon-5.png" alt = "icon1" className = "french-section-1-icon-mobile"></img>
+                    <h4 className = "french-section-1-card-text-mobile">Develops <br/><span style = {{color: "#2D3092"}}>networking skills</span></h4>
                 </div>
             </>
        }

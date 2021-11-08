@@ -178,6 +178,7 @@
     transition: 0.25s;
     font-size: 15px;
     padding-left: 10px;
+    background-color: transparent;
   }
   .dropdown-list{
     overflow-y: scroll;
@@ -306,7 +307,14 @@
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
+    transition: 0.3s;
 }
+.register-btn:hover{
+    background-color: #F7FAFB;
+    color: #2d3092;
+    border: 2px solid #2d3092;
+}
+
 .french-hero-section-2-date-container{
     margin-left: 20px;
     margin-top: 20px;
@@ -415,13 +423,6 @@
         right: 0px;
     }
  
-    @media only screen and (max-width: 440px){
-        .checkbox-label{
-            font-size: 14px;
-        }  
-        .checkbox{
-            margin-left: 10px;
-        }  
-    }
+   
     
 }

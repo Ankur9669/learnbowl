@@ -77,6 +77,29 @@
     margin-top: 60px;
     margin-bottom: 20px;
     font-weight: 500;
+    transition: 0.3s;
+}
+.home-section-2 .register-btn:hover{
+    background-color: #F7FAFB;
+    color: #2d3092;
+    border: 2px solid #2d3092;
+}
+.home-section-2-rightArrow{
+    position: relative;
+    font-size: 18px;
+    top: 2px;
+    margin-left: 5px;
+}
+.home-section-2 .register-btn:hover .home-section-2-rightArrow{
+    animation: goRight 3s forwards;
+}
+@keyframes goRight {
+    from{
+        left: 0px;
+    }
+    to{
+        left: 20px;
+    }
 }
 @media only screen and (max-width: 1080px)
 {
@@ -172,7 +195,7 @@
     .home-section-2section-2-img{
         width: 300px;
     }
-    .home-section-2-section-1 .rightArrow{
-        width: 13px;
+    .home-section-2-rightArrow{
+        font-size: 14px;
     }
 }

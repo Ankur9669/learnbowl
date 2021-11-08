@@ -43,7 +43,8 @@ function Section1() {
 
                     <div className = "vedic-section-1-icon">
                         <div className = "vedic-section-1-icon-container">
-                            <img src = "vedic-section-1-icon-3-test.svg" alt = "image" className = "vedic-section-1-icon-img"></img>
+                            <object data = "vedic-section-1-icon-31.svg" type = "image/svg+xml" alt = "image" className = "vedic-section-1-icon-img"></object> 
+                            {/* <img src = "/2.png" alt = "image" className = "vedic-section-1-icon-img"></img> */}
                         </div>
                         
                         {width < 768 && <p className = "vedic-section-1-icon-txt">Boosts <br/><span style = {{color: "#2d3092"}}>Confidence</span></p>}

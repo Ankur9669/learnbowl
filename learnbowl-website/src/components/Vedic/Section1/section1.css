@@ -40,7 +40,7 @@
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
-    max-width: 1590px;
+    max-width: 1200px;
     margin: auto;
     /* max-width: 1350px;
     margin: auto; */
@@ -149,6 +149,7 @@
     }
     .vedic-section-1-heading{
         font-size: 30px;
+        font-weight: 500;
     }
     .vedic-section-1-sub-heading{
         font-size: 18px;

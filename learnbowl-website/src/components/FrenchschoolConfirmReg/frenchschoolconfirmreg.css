@@ -30,6 +30,7 @@
     max-width: 750px;
 }
 .frenchschoolconfirmreg-form{
+    position: relative;
     max-width: 646px;
     width: 100%;
     background-color: white;
@@ -62,6 +63,16 @@
     top: 15px;
     transition: 0.25s;
 }
+/* .checkbox-frenchschool{
+    position: relative;
+    left: -90px;
+    margin-bottom: 20px
+} */
+.checkbox-label-frenchschool-confirm{
+    font-size: 12px;
+    /* position: relative;
+    left: -70px; */
+}
 .input-box.active .input-label-frenchschoolconfirm,
   .input-frenchschoolconfirm:focus + .input-label-frenchschoolconfirm,
   .input-frenchschoolconfirm:active + .input-label-frenchschoolconfirm{
@@ -87,6 +98,12 @@
     font-size: 18px;
     background-color: #2d3092;
     color: white;
+    transition: 0.3s;
+}
+.frenchschoolconfirmreg-register-btn:hover{
+    background-color: transparent;
+    color: #2d3092;
+    border: 2px solid #2d3092;
 }
 .frenchschoolconfirmreg-form-heading{
     width: 70%;

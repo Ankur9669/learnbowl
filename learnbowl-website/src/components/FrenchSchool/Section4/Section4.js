@@ -26,7 +26,7 @@ function Section4() {
                 <div className = "frenchschool-section-4-points">
                     <div>
                         <div className = "frenchschool-section-4-point" style = {{borderLeft: "4px solid #FFB400"}}>    
-                            <p className = "frenchschool-section-4-point-info-1">200+</p>
+                            <p className = "frenchschool-section-4-point-info-1">5000+</p>
                             <p className = "frenchschool-section-4-point-info-2">Happy Students</p>
                         </div>
                         <div className = "frenchschool-section-4-point" style = {{borderLeft: "4px solid #D65555", marginTop : width > 768 ? "90px" : "0px"}}>    
@@ -36,7 +36,7 @@ function Section4() {
                     </div>
                     <div>
                         <div className = "frenchschool-section-4-point" style = {{borderLeft: "4px solid #49A0A9"}}>    
-                            <p className = "frenchschool-section-4-point-info-1">4000+</p>
+                            <p className = "frenchschool-section-4-point-info-1">20000+</p>
                             <p className = "frenchschool-section-4-point-info-2">Teaching Hours</p>
                         </div>
                         <div className = "frenchschool-section-4-point" style = {{borderLeft: "4px solid #56A219", marginTop : width > 768 ? "90px" : "0px"}}>    
